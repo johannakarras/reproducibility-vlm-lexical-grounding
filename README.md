@@ -58,7 +58,7 @@
   # - VisualBERT_vt
   bash scripts/piqa/precompute_sentence_embedding.sh -e [embedder]
   ```
-  We have also provided a script to precompute the sentence embeddings for all 7 provided embedder at once.
+  Additional reproducability instruction: We have also provided a script to precompute the sentence embeddings for all 7 provided embedder at once.
   ```shell script
   bash scripts/piqa/run_all_precompute_embeddings.sh
   ```
@@ -75,7 +75,7 @@
   ```
   The default arguments of both commands will run the experiments for 5 times and log the averaged performance metric. You can modify the `num_runs` in the scripts to control the number of runs. The logs will be written to `logs/piqa/`, while the outputs (i.e. predictions on validation set of PIQA) will be written to `outputs/piqa/`.
 
-  We have also provided a script to run all the probing experiments for all 7 provided embedder at once.
+  Additional reproducability instruction: We have also provided a script to run all the probing experiments for all 7 provided embedder at once.
   ```shell script
   bash scripts/piqa/run_all_probing_experiments.sh
   ```
