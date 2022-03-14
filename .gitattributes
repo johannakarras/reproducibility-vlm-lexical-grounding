@@ -1,1 +1,2 @@
-*.psd filter=lfs diff=lfs merge=lfs -text
+logs/piqa_logs_original_experiment/ filter=lfs diff=lfs merge=lfs -text
+logs/piqa_logs_secondary_experiment/ filter=lfs diff=lfs merge=lfs -text
