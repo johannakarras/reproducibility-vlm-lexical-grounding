@@ -1,0 +1,42 @@
+02/21 08:59:12 AM INFO: Argument embedder: VideoBERT_randmask_text
+02/21 08:59:12 AM INFO: Argument num_rows: -1
+02/21 08:59:12 AM INFO: Argument seed: 1123
+02/21 08:59:12 AM INFO: Argument data_dir_path: ./data/piqa
+02/21 08:59:12 AM INFO: Argument batch_size: 1
+02/21 08:59:12 AM INFO: Argument verbose: True
+02/21 08:59:12 AM INFO: Argument report_step: 1000
+02/21 08:59:12 AM INFO: Argument dir_path: ./models/bert_ckpts_20210121
+02/21 08:59:12 AM INFO: Argument config_path: ./models/bert_ckpts_20210121/bert_config.json
+02/21 08:59:12 AM INFO: Argument model_path: ./models/bert_ckpts_20210121/randmask_text/pytorch_model.bin
+02/21 08:59:12 AM INFO: Argument vocab_path: ./models/bert_ckpts_20210121/vocab.txt
+02/21 08:59:12 AM INFO: Argument output_name: VideoBERT_randmask_text_precompute
+02/21 08:59:12 AM INFO: Load pretrained embedder and tokenizer
+02/21 08:59:21 AM INFO: ======================================================================
+02/21 08:59:21 AM INFO: Start computing for split: train
+02/21 08:59:48 AM INFO: | iter_id        0 |
+02/21 09:00:24 AM INFO: | iter_id     1000 |
+02/21 09:01:00 AM INFO: | iter_id     2000 |
+02/21 09:01:36 AM INFO: | iter_id     3000 |
+02/21 09:02:12 AM INFO: | iter_id     4000 |
+02/21 09:02:48 AM INFO: | iter_id     5000 |
+02/21 09:03:24 AM INFO: | iter_id     6000 |
+02/21 09:04:01 AM INFO: | iter_id     7000 |
+02/21 09:04:38 AM INFO: | iter_id     8000 |
+02/21 09:05:14 AM INFO: | iter_id     9000 |
+02/21 09:05:51 AM INFO: | iter_id    10000 |
+02/21 09:06:28 AM INFO: | iter_id    11000 |
+02/21 09:07:04 AM INFO: | iter_id    12000 |
+02/21 09:07:41 AM INFO: | iter_id    13000 |
+02/21 09:08:18 AM INFO: | iter_id    14000 |
+02/21 09:08:55 AM INFO: | iter_id    15000 |
+02/21 09:09:32 AM INFO: | iter_id    16000 |
+02/21 09:09:37 AM INFO: **********************************************************************
+02/21 09:09:37 AM INFO: Save train embeddings from VideoBERT_randmask_text to ./data/piqa/precompute_embs/VideoBERT_randmask_text_train.npy
+02/21 09:09:37 AM INFO: **********************************************************************
+02/21 09:09:37 AM INFO: ======================================================================
+02/21 09:09:37 AM INFO: Start computing for split: valid
+02/21 09:09:40 AM INFO: | iter_id        0 |
+02/21 09:10:16 AM INFO: | iter_id     1000 |
+02/21 09:10:47 AM INFO: **********************************************************************
+02/21 09:10:47 AM INFO: Save valid embeddings from VideoBERT_randmask_text to ./data/piqa/precompute_embs/VideoBERT_randmask_text_valid.npy
+02/21 09:10:47 AM INFO: **********************************************************************

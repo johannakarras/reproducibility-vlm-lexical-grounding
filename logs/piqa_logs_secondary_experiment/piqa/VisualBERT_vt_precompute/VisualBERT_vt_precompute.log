@@ -1,0 +1,34 @@
+03/08 22:50:51 PM INFO: Argument embedder: VisualBERT_vt
+03/08 22:50:51 PM INFO: Argument num_rows: -1
+03/08 22:50:51 PM INFO: Argument seed: 1123
+03/08 22:50:51 PM INFO: Argument data_dir_path: ./data/piqa
+03/08 22:50:51 PM INFO: Argument batch_size: 1
+03/08 22:50:51 PM INFO: Argument verbose: True
+03/08 22:50:51 PM INFO: Argument report_step: 1000
+03/08 22:50:51 PM INFO: Argument dir_path: ./models/visualbert
+03/08 22:50:51 PM INFO: Argument config_path: ./models/visualbert/bert_config.json
+03/08 22:50:51 PM INFO: Argument model_path: ./models/visualbert/visualbert_vt/pytorch_model.bin
+03/08 22:50:51 PM INFO: Argument vocab_path: ./models/visualbert/vocab.txt
+03/08 22:50:51 PM INFO: Argument output_name: VisualBERT_vt_precompute
+03/08 22:50:51 PM INFO: Load pretrained embedder and tokenizer
+03/08 22:51:00 PM INFO: ======================================================================
+03/08 22:51:00 PM INFO: Start computing for split: train
+03/08 22:51:12 PM INFO: | iter_id        0 |
+03/08 22:51:48 PM INFO: | iter_id     1000 |
+03/08 22:52:24 PM INFO: | iter_id     2000 |
+03/08 22:53:00 PM INFO: | iter_id     3000 |
+03/08 22:53:36 PM INFO: | iter_id     4000 |
+03/08 22:54:12 PM INFO: | iter_id     5000 |
+03/08 22:54:48 PM INFO: | iter_id     6000 |
+03/08 22:55:25 PM INFO: | iter_id     7000 |
+03/08 22:56:01 PM INFO: | iter_id     8000 |
+03/08 22:56:03 PM INFO: **********************************************************************
+03/08 22:56:03 PM INFO: Save train embeddings from VisualBERT_vt to ./data/piqa/precompute_embs/VisualBERT_vt_train.npy
+03/08 22:56:03 PM INFO: **********************************************************************
+03/08 22:56:03 PM INFO: ======================================================================
+03/08 22:56:03 PM INFO: Start computing for split: valid
+03/08 22:56:06 PM INFO: | iter_id        0 |
+03/08 22:56:42 PM INFO: | iter_id     1000 |
+03/08 22:57:12 PM INFO: **********************************************************************
+03/08 22:57:12 PM INFO: Save valid embeddings from VisualBERT_vt to ./data/piqa/precompute_embs/VisualBERT_vt_valid.npy
+03/08 22:57:12 PM INFO: **********************************************************************

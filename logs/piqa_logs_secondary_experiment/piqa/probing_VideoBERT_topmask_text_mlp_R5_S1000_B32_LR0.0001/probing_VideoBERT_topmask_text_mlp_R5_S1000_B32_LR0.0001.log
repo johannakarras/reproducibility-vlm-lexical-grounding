@@ -1,0 +1,2135 @@
+03/08 23:46:04 PM INFO: Argument embedder: VideoBERT_topmask_text
+03/08 23:46:04 PM INFO: Argument cls_type: mlp
+03/08 23:46:04 PM INFO: Argument is_challenge: False
+03/08 23:46:04 PM INFO: Argument num_rows: -1
+03/08 23:46:04 PM INFO: Argument seed: 1123
+03/08 23:46:04 PM INFO: Argument data_dir_path: ./data/piqa
+03/08 23:46:04 PM INFO: Argument num_runs: 5
+03/08 23:46:04 PM INFO: Argument verbose: True
+03/08 23:46:04 PM INFO: Argument report_step: 100
+03/08 23:46:04 PM INFO: Argument input_size: 768
+03/08 23:46:04 PM INFO: Argument hidden_size: 512
+03/08 23:46:04 PM INFO: Argument dropout: 0.0
+03/08 23:46:04 PM INFO: Argument train_step: 1000
+03/08 23:46:04 PM INFO: Argument lr_patience: 5
+03/08 23:46:04 PM INFO: Argument patience: 20
+03/08 23:46:04 PM INFO: Argument factor: 0.5
+03/08 23:46:04 PM INFO: Argument threshold: 0.0001
+03/08 23:46:04 PM INFO: Argument min_lr: 1e-06
+03/08 23:46:04 PM INFO: Argument batch_size: 32
+03/08 23:46:04 PM INFO: Argument learning_rate: 0.0001
+03/08 23:46:04 PM INFO: Argument dir_path: ./models/bert_ckpts_20210121
+03/08 23:46:04 PM INFO: Argument config_path: ./models/bert_ckpts_20210121/bert_config.json
+03/08 23:46:04 PM INFO: Argument model_path: ./models/bert_ckpts_20210121/topmask_text/pytorch_model.bin
+03/08 23:46:04 PM INFO: Argument vocab_path: ./models/bert_ckpts_20210121/vocab.txt
+03/08 23:46:04 PM INFO: Argument train_data_path: ./data/piqa/precompute_embs/VideoBERT_topmask_text_train.npy
+03/08 23:46:04 PM INFO: Argument train_label_path: ./data/piqa/train-labels.lst
+03/08 23:46:04 PM INFO: Argument valid_data_path: ./data/piqa/precompute_embs/VideoBERT_topmask_text_valid.npy
+03/08 23:46:04 PM INFO: Argument valid_label_path: ./data/piqa/valid-labels.lst
+03/08 23:46:04 PM INFO: Argument output_name: probing_VideoBERT_topmask_text_mlp_R5_S1000_B32_LR0.0001
+03/08 23:46:04 PM INFO: ######################################################################
+03/08 23:46:04 PM INFO: ######################################################################
+03/08 23:46:06 PM INFO: ======================================================================
+03/08 23:46:06 PM INFO: | Validation      0 | iter        0 | train_loss  0.68272 |
+03/08 23:46:07 PM INFO: | Validation      0 | iter      100 | train_loss  0.69525 |
+03/08 23:46:07 PM INFO: | Validation      0 | iter      200 | train_loss  0.68289 |
+03/08 23:46:07 PM INFO: | Validation      0 | iter      300 | train_loss  0.65208 |
+03/08 23:46:07 PM INFO: | Validation      0 | iter      400 | train_loss  0.66371 |
+03/08 23:46:07 PM INFO: | Validation      0 | iter      500 | train_loss  0.64710 |
+03/08 23:46:08 PM INFO: | Validation      0 | iter      600 | train_loss  0.61625 |
+03/08 23:46:08 PM INFO: | Validation      0 | iter      700 | train_loss  0.65005 |
+03/08 23:46:08 PM INFO: | Validation      0 | iter      800 | train_loss  0.65333 |
+03/08 23:46:08 PM INFO: | Validation      0 | iter      900 | train_loss  0.66647 |
+03/08 23:46:08 PM INFO: | Validation      0 | eval_acc  0.56692 |
+03/08 23:46:08 PM INFO: **********************************************************************
+03/08 23:46:08 PM INFO: Best model found with accuracy  0.56692
+03/08 23:46:08 PM INFO: **********************************************************************
+03/08 23:46:08 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:08 PM INFO: Best accuracy  0.56692 at Step 0
+03/08 23:46:08 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:46:08 PM INFO: Total validation passes without improvement:      0
+03/08 23:46:08 PM INFO: ======================================================================
+03/08 23:46:08 PM INFO: ======================================================================
+03/08 23:46:08 PM INFO: | Validation      1 | iter        0 | train_loss  0.61011 |
+03/08 23:46:09 PM INFO: | Validation      1 | iter      100 | train_loss  0.69389 |
+03/08 23:46:09 PM INFO: | Validation      1 | iter      200 | train_loss  0.68417 |
+03/08 23:46:09 PM INFO: | Validation      1 | iter      300 | train_loss  0.63262 |
+03/08 23:46:09 PM INFO: | Validation      1 | iter      400 | train_loss  0.75306 |
+03/08 23:46:10 PM INFO: | Validation      1 | iter      500 | train_loss  0.62432 |
+03/08 23:46:10 PM INFO: | Validation      1 | iter      600 | train_loss  0.57426 |
+03/08 23:46:10 PM INFO: | Validation      1 | iter      700 | train_loss  0.67219 |
+03/08 23:46:10 PM INFO: | Validation      1 | iter      800 | train_loss  0.64904 |
+03/08 23:46:10 PM INFO: | Validation      1 | iter      900 | train_loss  0.62886 |
+03/08 23:46:11 PM INFO: | Validation      1 | eval_acc  0.56420 |
+03/08 23:46:11 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:11 PM INFO: Best accuracy  0.56692 at Step 0
+03/08 23:46:11 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:46:11 PM INFO: Total validation passes without improvement:      1
+03/08 23:46:11 PM INFO: ======================================================================
+03/08 23:46:11 PM INFO: ======================================================================
+03/08 23:46:11 PM INFO: | Validation      2 | iter        0 | train_loss  0.64650 |
+03/08 23:46:11 PM INFO: | Validation      2 | iter      100 | train_loss  0.55374 |
+03/08 23:46:11 PM INFO: | Validation      2 | iter      200 | train_loss  0.69384 |
+03/08 23:46:11 PM INFO: | Validation      2 | iter      300 | train_loss  0.60182 |
+03/08 23:46:11 PM INFO: | Validation      2 | iter      400 | train_loss  0.63089 |
+03/08 23:46:12 PM INFO: | Validation      2 | iter      500 | train_loss  0.59075 |
+03/08 23:46:12 PM INFO: | Validation      2 | iter      600 | train_loss  0.71476 |
+03/08 23:46:12 PM INFO: | Validation      2 | iter      700 | train_loss  0.66200 |
+03/08 23:46:12 PM INFO: | Validation      2 | iter      800 | train_loss  0.53770 |
+03/08 23:46:12 PM INFO: | Validation      2 | iter      900 | train_loss  0.66246 |
+03/08 23:46:13 PM INFO: | Validation      2 | eval_acc  0.57399 |
+03/08 23:46:13 PM INFO: **********************************************************************
+03/08 23:46:13 PM INFO: Best model found with accuracy  0.57399
+03/08 23:46:13 PM INFO: **********************************************************************
+03/08 23:46:13 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:13 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:13 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:46:13 PM INFO: Total validation passes without improvement:      0
+03/08 23:46:13 PM INFO: ======================================================================
+03/08 23:46:13 PM INFO: ======================================================================
+03/08 23:46:13 PM INFO: | Validation      3 | iter        0 | train_loss  0.64020 |
+03/08 23:46:13 PM INFO: | Validation      3 | iter      100 | train_loss  0.61039 |
+03/08 23:46:13 PM INFO: | Validation      3 | iter      200 | train_loss  0.53735 |
+03/08 23:46:13 PM INFO: | Validation      3 | iter      300 | train_loss  0.58376 |
+03/08 23:46:14 PM INFO: | Validation      3 | iter      400 | train_loss  0.57361 |
+03/08 23:46:14 PM INFO: | Validation      3 | iter      500 | train_loss  0.54935 |
+03/08 23:46:14 PM INFO: | Validation      3 | iter      600 | train_loss  0.63855 |
+03/08 23:46:14 PM INFO: | Validation      3 | iter      700 | train_loss  0.58756 |
+03/08 23:46:14 PM INFO: | Validation      3 | iter      800 | train_loss  0.55733 |
+03/08 23:46:15 PM INFO: | Validation      3 | iter      900 | train_loss  0.61180 |
+03/08 23:46:15 PM INFO: | Validation      3 | eval_acc  0.56148 |
+03/08 23:46:15 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:15 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:15 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:46:15 PM INFO: Total validation passes without improvement:      1
+03/08 23:46:15 PM INFO: ======================================================================
+03/08 23:46:15 PM INFO: ======================================================================
+03/08 23:46:15 PM INFO: | Validation      4 | iter        0 | train_loss  0.59289 |
+03/08 23:46:15 PM INFO: | Validation      4 | iter      100 | train_loss  0.52992 |
+03/08 23:46:15 PM INFO: | Validation      4 | iter      200 | train_loss  0.66579 |
+03/08 23:46:16 PM INFO: | Validation      4 | iter      300 | train_loss  0.54267 |
+03/08 23:46:16 PM INFO: | Validation      4 | iter      400 | train_loss  0.50792 |
+03/08 23:46:16 PM INFO: | Validation      4 | iter      500 | train_loss  0.59648 |
+03/08 23:46:16 PM INFO: | Validation      4 | iter      600 | train_loss  0.54855 |
+03/08 23:46:16 PM INFO: | Validation      4 | iter      700 | train_loss  0.57994 |
+03/08 23:46:17 PM INFO: | Validation      4 | iter      800 | train_loss  0.60061 |
+03/08 23:46:17 PM INFO: | Validation      4 | iter      900 | train_loss  0.54628 |
+03/08 23:46:17 PM INFO: | Validation      4 | eval_acc  0.56148 |
+03/08 23:46:17 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:17 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:17 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:46:17 PM INFO: Total validation passes without improvement:      2
+03/08 23:46:17 PM INFO: ======================================================================
+03/08 23:46:17 PM INFO: ======================================================================
+03/08 23:46:17 PM INFO: | Validation      5 | iter        0 | train_loss  0.57687 |
+03/08 23:46:17 PM INFO: | Validation      5 | iter      100 | train_loss  0.59373 |
+03/08 23:46:18 PM INFO: | Validation      5 | iter      200 | train_loss  0.54457 |
+03/08 23:46:18 PM INFO: | Validation      5 | iter      300 | train_loss  0.48581 |
+03/08 23:46:18 PM INFO: | Validation      5 | iter      400 | train_loss  0.46719 |
+03/08 23:46:18 PM INFO: | Validation      5 | iter      500 | train_loss  0.49698 |
+03/08 23:46:18 PM INFO: | Validation      5 | iter      600 | train_loss  0.44044 |
+03/08 23:46:19 PM INFO: | Validation      5 | iter      700 | train_loss  0.54389 |
+03/08 23:46:19 PM INFO: | Validation      5 | iter      800 | train_loss  0.46475 |
+03/08 23:46:19 PM INFO: | Validation      5 | iter      900 | train_loss  0.65815 |
+03/08 23:46:19 PM INFO: | Validation      5 | eval_acc  0.56420 |
+03/08 23:46:19 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:19 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:19 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:46:19 PM INFO: Total validation passes without improvement:      3
+03/08 23:46:19 PM INFO: ======================================================================
+03/08 23:46:19 PM INFO: ======================================================================
+03/08 23:46:19 PM INFO: | Validation      6 | iter        0 | train_loss  0.56171 |
+03/08 23:46:20 PM INFO: | Validation      6 | iter      100 | train_loss  0.45848 |
+03/08 23:46:20 PM INFO: | Validation      6 | iter      200 | train_loss  0.54743 |
+03/08 23:46:20 PM INFO: | Validation      6 | iter      300 | train_loss  0.41904 |
+03/08 23:46:20 PM INFO: | Validation      6 | iter      400 | train_loss  0.55674 |
+03/08 23:46:20 PM INFO: | Validation      6 | iter      500 | train_loss  0.55594 |
+03/08 23:46:21 PM INFO: | Validation      6 | iter      600 | train_loss  0.56977 |
+03/08 23:46:21 PM INFO: | Validation      6 | iter      700 | train_loss  0.31735 |
+03/08 23:46:21 PM INFO: | Validation      6 | iter      800 | train_loss  0.42852 |
+03/08 23:46:21 PM INFO: | Validation      6 | iter      900 | train_loss  0.51928 |
+03/08 23:46:22 PM INFO: | Validation      6 | eval_acc  0.56094 |
+03/08 23:46:22 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:22 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:22 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:46:22 PM INFO: Total validation passes without improvement:      4
+03/08 23:46:22 PM INFO: ======================================================================
+03/08 23:46:22 PM INFO: ======================================================================
+03/08 23:46:22 PM INFO: | Validation      7 | iter        0 | train_loss  0.49118 |
+03/08 23:46:22 PM INFO: | Validation      7 | iter      100 | train_loss  0.36039 |
+03/08 23:46:22 PM INFO: | Validation      7 | iter      200 | train_loss  0.43410 |
+03/08 23:46:22 PM INFO: | Validation      7 | iter      300 | train_loss  0.43385 |
+03/08 23:46:22 PM INFO: | Validation      7 | iter      400 | train_loss  0.43011 |
+03/08 23:46:23 PM INFO: | Validation      7 | iter      500 | train_loss  0.42782 |
+03/08 23:46:23 PM INFO: | Validation      7 | iter      600 | train_loss  0.36338 |
+03/08 23:46:23 PM INFO: | Validation      7 | iter      700 | train_loss  0.46283 |
+03/08 23:46:23 PM INFO: | Validation      7 | iter      800 | train_loss  0.35591 |
+03/08 23:46:23 PM INFO: | Validation      7 | iter      900 | train_loss  0.43079 |
+03/08 23:46:24 PM INFO: | Validation      7 | eval_acc  0.56855 |
+03/08 23:46:24 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:24 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:24 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:46:24 PM INFO: Total validation passes without improvement:      5
+03/08 23:46:24 PM INFO: ======================================================================
+03/08 23:46:24 PM INFO: ======================================================================
+03/08 23:46:24 PM INFO: | Validation      8 | iter        0 | train_loss  0.43992 |
+03/08 23:46:24 PM INFO: | Validation      8 | iter      100 | train_loss  0.43135 |
+03/08 23:46:24 PM INFO: | Validation      8 | iter      200 | train_loss  0.42185 |
+03/08 23:46:24 PM INFO: | Validation      8 | iter      300 | train_loss  0.43477 |
+03/08 23:46:25 PM INFO: | Validation      8 | iter      400 | train_loss  0.46968 |
+03/08 23:46:25 PM INFO: | Validation      8 | iter      500 | train_loss  0.46056 |
+03/08 23:46:25 PM INFO: | Validation      8 | iter      600 | train_loss  0.32584 |
+03/08 23:46:25 PM INFO: | Validation      8 | iter      700 | train_loss  0.33977 |
+03/08 23:46:25 PM INFO: | Validation      8 | iter      800 | train_loss  0.33865 |
+03/08 23:46:26 PM INFO: | Validation      8 | iter      900 | train_loss  0.47669 |
+03/08 23:46:26 PM INFO: | Validation      8 | eval_acc  0.56094 |
+03/08 23:46:26 PM INFO: Current LR: 5.000000e-05
+03/08 23:46:26 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:26 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:46:26 PM INFO: Total validation passes without improvement:      6
+03/08 23:46:26 PM INFO: ======================================================================
+03/08 23:46:26 PM INFO: ======================================================================
+03/08 23:46:26 PM INFO: | Validation      9 | iter        0 | train_loss  0.35738 |
+03/08 23:46:26 PM INFO: | Validation      9 | iter      100 | train_loss  0.31323 |
+03/08 23:46:26 PM INFO: | Validation      9 | iter      200 | train_loss  0.37817 |
+03/08 23:46:27 PM INFO: | Validation      9 | iter      300 | train_loss  0.38970 |
+03/08 23:46:27 PM INFO: | Validation      9 | iter      400 | train_loss  0.31560 |
+03/08 23:46:27 PM INFO: | Validation      9 | iter      500 | train_loss  0.54221 |
+03/08 23:46:27 PM INFO: | Validation      9 | iter      600 | train_loss  0.43005 |
+03/08 23:46:27 PM INFO: | Validation      9 | iter      700 | train_loss  0.42252 |
+03/08 23:46:28 PM INFO: | Validation      9 | iter      800 | train_loss  0.38206 |
+03/08 23:46:28 PM INFO: | Validation      9 | iter      900 | train_loss  0.44149 |
+03/08 23:46:28 PM INFO: | Validation      9 | eval_acc  0.56311 |
+03/08 23:46:28 PM INFO: Current LR: 5.000000e-05
+03/08 23:46:28 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:28 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:46:28 PM INFO: Total validation passes without improvement:      7
+03/08 23:46:28 PM INFO: ======================================================================
+03/08 23:46:28 PM INFO: ======================================================================
+03/08 23:46:28 PM INFO: | Validation     10 | iter        0 | train_loss  0.33134 |
+03/08 23:46:28 PM INFO: | Validation     10 | iter      100 | train_loss  0.42205 |
+03/08 23:46:28 PM INFO: | Validation     10 | iter      200 | train_loss  0.36941 |
+03/08 23:46:29 PM INFO: | Validation     10 | iter      300 | train_loss  0.31802 |
+03/08 23:46:29 PM INFO: | Validation     10 | iter      400 | train_loss  0.21911 |
+03/08 23:46:29 PM INFO: | Validation     10 | iter      500 | train_loss  0.35752 |
+03/08 23:46:29 PM INFO: | Validation     10 | iter      600 | train_loss  0.33823 |
+03/08 23:46:30 PM INFO: | Validation     10 | iter      700 | train_loss  0.32413 |
+03/08 23:46:30 PM INFO: | Validation     10 | iter      800 | train_loss  0.29759 |
+03/08 23:46:30 PM INFO: | Validation     10 | iter      900 | train_loss  0.35491 |
+03/08 23:46:30 PM INFO: | Validation     10 | eval_acc  0.56366 |
+03/08 23:46:30 PM INFO: Current LR: 5.000000e-05
+03/08 23:46:30 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:30 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:46:30 PM INFO: Total validation passes without improvement:      8
+03/08 23:46:30 PM INFO: ======================================================================
+03/08 23:46:30 PM INFO: ======================================================================
+03/08 23:46:30 PM INFO: | Validation     11 | iter        0 | train_loss  0.33362 |
+03/08 23:46:30 PM INFO: | Validation     11 | iter      100 | train_loss  0.26683 |
+03/08 23:46:31 PM INFO: | Validation     11 | iter      200 | train_loss  0.32623 |
+03/08 23:46:31 PM INFO: | Validation     11 | iter      300 | train_loss  0.33998 |
+03/08 23:46:31 PM INFO: | Validation     11 | iter      400 | train_loss  0.28391 |
+03/08 23:46:31 PM INFO: | Validation     11 | iter      500 | train_loss  0.35220 |
+03/08 23:46:32 PM INFO: | Validation     11 | iter      600 | train_loss  0.27641 |
+03/08 23:46:32 PM INFO: | Validation     11 | iter      700 | train_loss  0.43850 |
+03/08 23:46:32 PM INFO: | Validation     11 | iter      800 | train_loss  0.26262 |
+03/08 23:46:32 PM INFO: | Validation     11 | iter      900 | train_loss  0.28154 |
+03/08 23:46:32 PM INFO: | Validation     11 | eval_acc  0.57236 |
+03/08 23:46:32 PM INFO: Current LR: 5.000000e-05
+03/08 23:46:32 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:32 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:46:32 PM INFO: Total validation passes without improvement:      9
+03/08 23:46:32 PM INFO: ======================================================================
+03/08 23:46:32 PM INFO: ======================================================================
+03/08 23:46:32 PM INFO: | Validation     12 | iter        0 | train_loss  0.31215 |
+03/08 23:46:33 PM INFO: | Validation     12 | iter      100 | train_loss  0.27750 |
+03/08 23:46:33 PM INFO: | Validation     12 | iter      200 | train_loss  0.34973 |
+03/08 23:46:33 PM INFO: | Validation     12 | iter      300 | train_loss  0.37155 |
+03/08 23:46:33 PM INFO: | Validation     12 | iter      400 | train_loss  0.37203 |
+03/08 23:46:34 PM INFO: | Validation     12 | iter      500 | train_loss  0.35254 |
+03/08 23:46:34 PM INFO: | Validation     12 | iter      600 | train_loss  0.33025 |
+03/08 23:46:34 PM INFO: | Validation     12 | iter      700 | train_loss  0.30061 |
+03/08 23:46:34 PM INFO: | Validation     12 | iter      800 | train_loss  0.29210 |
+03/08 23:46:34 PM INFO: | Validation     12 | iter      900 | train_loss  0.29748 |
+03/08 23:46:35 PM INFO: | Validation     12 | eval_acc  0.56039 |
+03/08 23:46:35 PM INFO: Current LR: 5.000000e-05
+03/08 23:46:35 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:35 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:46:35 PM INFO: Total validation passes without improvement:     10
+03/08 23:46:35 PM INFO: ======================================================================
+03/08 23:46:35 PM INFO: ======================================================================
+03/08 23:46:35 PM INFO: | Validation     13 | iter        0 | train_loss  0.29983 |
+03/08 23:46:35 PM INFO: | Validation     13 | iter      100 | train_loss  0.28492 |
+03/08 23:46:35 PM INFO: | Validation     13 | iter      200 | train_loss  0.31209 |
+03/08 23:46:35 PM INFO: | Validation     13 | iter      300 | train_loss  0.26952 |
+03/08 23:46:36 PM INFO: | Validation     13 | iter      400 | train_loss  0.24052 |
+03/08 23:46:36 PM INFO: | Validation     13 | iter      500 | train_loss  0.30423 |
+03/08 23:46:36 PM INFO: | Validation     13 | iter      600 | train_loss  0.36169 |
+03/08 23:46:36 PM INFO: | Validation     13 | iter      700 | train_loss  0.38026 |
+03/08 23:46:36 PM INFO: | Validation     13 | iter      800 | train_loss  0.27335 |
+03/08 23:46:37 PM INFO: | Validation     13 | iter      900 | train_loss  0.23064 |
+03/08 23:46:37 PM INFO: | Validation     13 | eval_acc  0.56202 |
+03/08 23:46:37 PM INFO: Current LR: 5.000000e-05
+03/08 23:46:37 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:37 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:46:37 PM INFO: Total validation passes without improvement:     11
+03/08 23:46:37 PM INFO: ======================================================================
+03/08 23:46:37 PM INFO: ======================================================================
+03/08 23:46:37 PM INFO: | Validation     14 | iter        0 | train_loss  0.27894 |
+03/08 23:46:37 PM INFO: | Validation     14 | iter      100 | train_loss  0.21299 |
+03/08 23:46:37 PM INFO: | Validation     14 | iter      200 | train_loss  0.34586 |
+03/08 23:46:38 PM INFO: | Validation     14 | iter      300 | train_loss  0.39528 |
+03/08 23:46:38 PM INFO: | Validation     14 | iter      400 | train_loss  0.32454 |
+03/08 23:46:38 PM INFO: | Validation     14 | iter      500 | train_loss  0.24445 |
+03/08 23:46:38 PM INFO: | Validation     14 | iter      600 | train_loss  0.19180 |
+03/08 23:46:38 PM INFO: | Validation     14 | iter      700 | train_loss  0.39426 |
+03/08 23:46:39 PM INFO: | Validation     14 | iter      800 | train_loss  0.19682 |
+03/08 23:46:39 PM INFO: | Validation     14 | iter      900 | train_loss  0.24541 |
+03/08 23:46:39 PM INFO: | Validation     14 | eval_acc  0.55930 |
+03/08 23:46:39 PM INFO: Current LR: 2.500000e-05
+03/08 23:46:39 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:39 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:46:39 PM INFO: Total validation passes without improvement:     12
+03/08 23:46:39 PM INFO: ======================================================================
+03/08 23:46:39 PM INFO: ======================================================================
+03/08 23:46:39 PM INFO: | Validation     15 | iter        0 | train_loss  0.20438 |
+03/08 23:46:39 PM INFO: | Validation     15 | iter      100 | train_loss  0.18237 |
+03/08 23:46:40 PM INFO: | Validation     15 | iter      200 | train_loss  0.26459 |
+03/08 23:46:40 PM INFO: | Validation     15 | iter      300 | train_loss  0.20650 |
+03/08 23:46:40 PM INFO: | Validation     15 | iter      400 | train_loss  0.22865 |
+03/08 23:46:40 PM INFO: | Validation     15 | iter      500 | train_loss  0.19419 |
+03/08 23:46:40 PM INFO: | Validation     15 | iter      600 | train_loss  0.25208 |
+03/08 23:46:41 PM INFO: | Validation     15 | iter      700 | train_loss  0.21787 |
+03/08 23:46:41 PM INFO: | Validation     15 | iter      800 | train_loss  0.24027 |
+03/08 23:46:41 PM INFO: | Validation     15 | iter      900 | train_loss  0.20622 |
+03/08 23:46:41 PM INFO: | Validation     15 | eval_acc  0.55604 |
+03/08 23:46:41 PM INFO: Current LR: 2.500000e-05
+03/08 23:46:41 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:41 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:46:41 PM INFO: Total validation passes without improvement:     13
+03/08 23:46:41 PM INFO: ======================================================================
+03/08 23:46:41 PM INFO: ======================================================================
+03/08 23:46:41 PM INFO: | Validation     16 | iter        0 | train_loss  0.13740 |
+03/08 23:46:42 PM INFO: | Validation     16 | iter      100 | train_loss  0.17610 |
+03/08 23:46:42 PM INFO: | Validation     16 | iter      200 | train_loss  0.18343 |
+03/08 23:46:42 PM INFO: | Validation     16 | iter      300 | train_loss  0.14174 |
+03/08 23:46:42 PM INFO: | Validation     16 | iter      400 | train_loss  0.24623 |
+03/08 23:46:42 PM INFO: | Validation     16 | iter      500 | train_loss  0.21621 |
+03/08 23:46:43 PM INFO: | Validation     16 | iter      600 | train_loss  0.25005 |
+03/08 23:46:43 PM INFO: | Validation     16 | iter      700 | train_loss  0.24177 |
+03/08 23:46:43 PM INFO: | Validation     16 | iter      800 | train_loss  0.20729 |
+03/08 23:46:43 PM INFO: | Validation     16 | iter      900 | train_loss  0.22736 |
+03/08 23:46:43 PM INFO: | Validation     16 | eval_acc  0.55876 |
+03/08 23:46:43 PM INFO: Current LR: 2.500000e-05
+03/08 23:46:43 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:43 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:46:43 PM INFO: Total validation passes without improvement:     14
+03/08 23:46:43 PM INFO: ======================================================================
+03/08 23:46:43 PM INFO: ======================================================================
+03/08 23:46:44 PM INFO: | Validation     17 | iter        0 | train_loss  0.27491 |
+03/08 23:46:44 PM INFO: | Validation     17 | iter      100 | train_loss  0.20800 |
+03/08 23:46:44 PM INFO: | Validation     17 | iter      200 | train_loss  0.23489 |
+03/08 23:46:44 PM INFO: | Validation     17 | iter      300 | train_loss  0.22726 |
+03/08 23:46:44 PM INFO: | Validation     17 | iter      400 | train_loss  0.19056 |
+03/08 23:46:45 PM INFO: | Validation     17 | iter      500 | train_loss  0.18948 |
+03/08 23:46:45 PM INFO: | Validation     17 | iter      600 | train_loss  0.20085 |
+03/08 23:46:45 PM INFO: | Validation     17 | iter      700 | train_loss  0.14156 |
+03/08 23:46:45 PM INFO: | Validation     17 | iter      800 | train_loss  0.26477 |
+03/08 23:46:45 PM INFO: | Validation     17 | iter      900 | train_loss  0.24163 |
+03/08 23:46:46 PM INFO: | Validation     17 | eval_acc  0.55386 |
+03/08 23:46:46 PM INFO: Current LR: 2.500000e-05
+03/08 23:46:46 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:46 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:46:46 PM INFO: Total validation passes without improvement:     15
+03/08 23:46:46 PM INFO: ======================================================================
+03/08 23:46:46 PM INFO: ======================================================================
+03/08 23:46:46 PM INFO: | Validation     18 | iter        0 | train_loss  0.15950 |
+03/08 23:46:46 PM INFO: | Validation     18 | iter      100 | train_loss  0.16121 |
+03/08 23:46:46 PM INFO: | Validation     18 | iter      200 | train_loss  0.24792 |
+03/08 23:46:46 PM INFO: | Validation     18 | iter      300 | train_loss  0.15725 |
+03/08 23:46:46 PM INFO: | Validation     18 | iter      400 | train_loss  0.20968 |
+03/08 23:46:47 PM INFO: | Validation     18 | iter      500 | train_loss  0.14207 |
+03/08 23:46:47 PM INFO: | Validation     18 | iter      600 | train_loss  0.16839 |
+03/08 23:46:47 PM INFO: | Validation     18 | iter      700 | train_loss  0.23513 |
+03/08 23:46:47 PM INFO: | Validation     18 | iter      800 | train_loss  0.22205 |
+03/08 23:46:47 PM INFO: | Validation     18 | iter      900 | train_loss  0.22539 |
+03/08 23:46:48 PM INFO: | Validation     18 | eval_acc  0.55822 |
+03/08 23:46:48 PM INFO: Current LR: 2.500000e-05
+03/08 23:46:48 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:48 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:46:48 PM INFO: Total validation passes without improvement:     16
+03/08 23:46:48 PM INFO: ======================================================================
+03/08 23:46:48 PM INFO: ======================================================================
+03/08 23:46:48 PM INFO: | Validation     19 | iter        0 | train_loss  0.15950 |
+03/08 23:46:48 PM INFO: | Validation     19 | iter      100 | train_loss  0.24558 |
+03/08 23:46:48 PM INFO: | Validation     19 | iter      200 | train_loss  0.15018 |
+03/08 23:46:48 PM INFO: | Validation     19 | iter      300 | train_loss  0.20052 |
+03/08 23:46:49 PM INFO: | Validation     19 | iter      400 | train_loss  0.18127 |
+03/08 23:46:49 PM INFO: | Validation     19 | iter      500 | train_loss  0.16891 |
+03/08 23:46:49 PM INFO: | Validation     19 | iter      600 | train_loss  0.22296 |
+03/08 23:46:49 PM INFO: | Validation     19 | iter      700 | train_loss  0.17856 |
+03/08 23:46:49 PM INFO: | Validation     19 | iter      800 | train_loss  0.15047 |
+03/08 23:46:50 PM INFO: | Validation     19 | iter      900 | train_loss  0.19445 |
+03/08 23:46:50 PM INFO: | Validation     19 | eval_acc  0.55386 |
+03/08 23:46:50 PM INFO: Current LR: 2.500000e-05
+03/08 23:46:50 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:50 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:46:50 PM INFO: Total validation passes without improvement:     17
+03/08 23:46:50 PM INFO: ======================================================================
+03/08 23:46:50 PM INFO: ======================================================================
+03/08 23:46:50 PM INFO: | Validation     20 | iter        0 | train_loss  0.16233 |
+03/08 23:46:50 PM INFO: | Validation     20 | iter      100 | train_loss  0.22880 |
+03/08 23:46:50 PM INFO: | Validation     20 | iter      200 | train_loss  0.18332 |
+03/08 23:46:50 PM INFO: | Validation     20 | iter      300 | train_loss  0.21987 |
+03/08 23:46:51 PM INFO: | Validation     20 | iter      400 | train_loss  0.12740 |
+03/08 23:46:51 PM INFO: | Validation     20 | iter      500 | train_loss  0.18687 |
+03/08 23:46:51 PM INFO: | Validation     20 | iter      600 | train_loss  0.17197 |
+03/08 23:46:51 PM INFO: | Validation     20 | iter      700 | train_loss  0.15725 |
+03/08 23:46:51 PM INFO: | Validation     20 | iter      800 | train_loss  0.16299 |
+03/08 23:46:52 PM INFO: | Validation     20 | iter      900 | train_loss  0.23382 |
+03/08 23:46:52 PM INFO: | Validation     20 | eval_acc  0.56257 |
+03/08 23:46:52 PM INFO: Current LR: 1.250000e-05
+03/08 23:46:52 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:52 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:46:52 PM INFO: Total validation passes without improvement:     18
+03/08 23:46:52 PM INFO: ======================================================================
+03/08 23:46:52 PM INFO: ======================================================================
+03/08 23:46:52 PM INFO: | Validation     21 | iter        0 | train_loss  0.21233 |
+03/08 23:46:52 PM INFO: | Validation     21 | iter      100 | train_loss  0.18181 |
+03/08 23:46:52 PM INFO: | Validation     21 | iter      200 | train_loss  0.15900 |
+03/08 23:46:52 PM INFO: | Validation     21 | iter      300 | train_loss  0.26234 |
+03/08 23:46:53 PM INFO: | Validation     21 | iter      400 | train_loss  0.14856 |
+03/08 23:46:53 PM INFO: | Validation     21 | iter      500 | train_loss  0.25867 |
+03/08 23:46:53 PM INFO: | Validation     21 | iter      600 | train_loss  0.23984 |
+03/08 23:46:53 PM INFO: | Validation     21 | iter      700 | train_loss  0.10700 |
+03/08 23:46:53 PM INFO: | Validation     21 | iter      800 | train_loss  0.12786 |
+03/08 23:46:54 PM INFO: | Validation     21 | iter      900 | train_loss  0.19827 |
+03/08 23:46:54 PM INFO: | Validation     21 | eval_acc  0.55767 |
+03/08 23:46:54 PM INFO: Current LR: 1.250000e-05
+03/08 23:46:54 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:54 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:46:54 PM INFO: Total validation passes without improvement:     19
+03/08 23:46:54 PM INFO: ======================================================================
+03/08 23:46:54 PM INFO: ======================================================================
+03/08 23:46:54 PM INFO: | Validation     22 | iter        0 | train_loss  0.26217 |
+03/08 23:46:54 PM INFO: | Validation     22 | iter      100 | train_loss  0.12491 |
+03/08 23:46:54 PM INFO: | Validation     22 | iter      200 | train_loss  0.20118 |
+03/08 23:46:55 PM INFO: | Validation     22 | iter      300 | train_loss  0.17244 |
+03/08 23:46:55 PM INFO: | Validation     22 | iter      400 | train_loss  0.16375 |
+03/08 23:46:55 PM INFO: | Validation     22 | iter      500 | train_loss  0.14749 |
+03/08 23:46:55 PM INFO: | Validation     22 | iter      600 | train_loss  0.14164 |
+03/08 23:46:55 PM INFO: | Validation     22 | iter      700 | train_loss  0.12289 |
+03/08 23:46:56 PM INFO: | Validation     22 | iter      800 | train_loss  0.15027 |
+03/08 23:46:56 PM INFO: | Validation     22 | iter      900 | train_loss  0.16688 |
+03/08 23:46:56 PM INFO: | Validation     22 | eval_acc  0.55277 |
+03/08 23:46:56 PM INFO: Current LR: 1.250000e-05
+03/08 23:46:56 PM INFO: Best accuracy  0.57399 at Step 2
+03/08 23:46:56 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:46:56 PM INFO: Total validation passes without improvement:     20
+03/08 23:46:56 PM INFO: ======================================================================
+03/08 23:46:56 PM INFO: Stopped training after 23 validation checks
+03/08 23:46:56 PM INFO: Trained for 23000 steps (batches) or 91.349137 epochs
+03/08 23:46:56 PM INFO: Best model found with accuracy  0.57399 at Validation 2
+03/08 23:46:56 PM INFO: Output predictions to ./outputs/piqa/probing_VideoBERT_topmask_text_mlp_R5_S1000_B32_LR0.0001
+03/08 23:46:56 PM INFO: ######################################################################
+03/08 23:46:56 PM INFO: ######################################################################
+03/08 23:46:56 PM INFO: ======================================================================
+03/08 23:46:56 PM INFO: | Validation      0 | iter        0 | train_loss  0.71983 |
+03/08 23:46:56 PM INFO: | Validation      0 | iter      100 | train_loss  0.74723 |
+03/08 23:46:57 PM INFO: | Validation      0 | iter      200 | train_loss  0.66124 |
+03/08 23:46:57 PM INFO: | Validation      0 | iter      300 | train_loss  0.65058 |
+03/08 23:46:57 PM INFO: | Validation      0 | iter      400 | train_loss  0.72555 |
+03/08 23:46:57 PM INFO: | Validation      0 | iter      500 | train_loss  0.71774 |
+03/08 23:46:57 PM INFO: | Validation      0 | iter      600 | train_loss  0.70747 |
+03/08 23:46:58 PM INFO: | Validation      0 | iter      700 | train_loss  0.73761 |
+03/08 23:46:58 PM INFO: | Validation      0 | iter      800 | train_loss  0.69088 |
+03/08 23:46:58 PM INFO: | Validation      0 | iter      900 | train_loss  0.68402 |
+03/08 23:46:58 PM INFO: | Validation      0 | eval_acc  0.56148 |
+03/08 23:46:58 PM INFO: **********************************************************************
+03/08 23:46:58 PM INFO: Best model found with accuracy  0.56148
+03/08 23:46:58 PM INFO: **********************************************************************
+03/08 23:46:58 PM INFO: Current LR: 1.000000e-04
+03/08 23:46:58 PM INFO: Best accuracy  0.56148 at Step 0
+03/08 23:46:58 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:46:58 PM INFO: Total validation passes without improvement:      0
+03/08 23:46:58 PM INFO: ======================================================================
+03/08 23:46:58 PM INFO: ======================================================================
+03/08 23:46:58 PM INFO: | Validation      1 | iter        0 | train_loss  0.76152 |
+03/08 23:46:59 PM INFO: | Validation      1 | iter      100 | train_loss  0.63587 |
+03/08 23:46:59 PM INFO: | Validation      1 | iter      200 | train_loss  0.72724 |
+03/08 23:46:59 PM INFO: | Validation      1 | iter      300 | train_loss  0.68373 |
+03/08 23:46:59 PM INFO: | Validation      1 | iter      400 | train_loss  0.59701 |
+03/08 23:46:59 PM INFO: | Validation      1 | iter      500 | train_loss  0.67720 |
+03/08 23:47:00 PM INFO: | Validation      1 | iter      600 | train_loss  0.64369 |
+03/08 23:47:00 PM INFO: | Validation      1 | iter      700 | train_loss  0.60411 |
+03/08 23:47:00 PM INFO: | Validation      1 | iter      800 | train_loss  0.66921 |
+03/08 23:47:00 PM INFO: | Validation      1 | iter      900 | train_loss  0.70973 |
+03/08 23:47:01 PM INFO: | Validation      1 | eval_acc  0.56148 |
+03/08 23:47:01 PM INFO: Current LR: 1.000000e-04
+03/08 23:47:01 PM INFO: Best accuracy  0.56148 at Step 0
+03/08 23:47:01 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:47:01 PM INFO: Total validation passes without improvement:      1
+03/08 23:47:01 PM INFO: ======================================================================
+03/08 23:47:01 PM INFO: ======================================================================
+03/08 23:47:01 PM INFO: | Validation      2 | iter        0 | train_loss  0.67030 |
+03/08 23:47:01 PM INFO: | Validation      2 | iter      100 | train_loss  0.62519 |
+03/08 23:47:01 PM INFO: | Validation      2 | iter      200 | train_loss  0.71591 |
+03/08 23:47:01 PM INFO: | Validation      2 | iter      300 | train_loss  0.59667 |
+03/08 23:47:01 PM INFO: | Validation      2 | iter      400 | train_loss  0.67894 |
+03/08 23:47:02 PM INFO: | Validation      2 | iter      500 | train_loss  0.57626 |
+03/08 23:47:02 PM INFO: | Validation      2 | iter      600 | train_loss  0.60669 |
+03/08 23:47:02 PM INFO: | Validation      2 | iter      700 | train_loss  0.67836 |
+03/08 23:47:02 PM INFO: | Validation      2 | iter      800 | train_loss  0.60667 |
+03/08 23:47:03 PM INFO: | Validation      2 | iter      900 | train_loss  0.53968 |
+03/08 23:47:03 PM INFO: | Validation      2 | eval_acc  0.57236 |
+03/08 23:47:03 PM INFO: **********************************************************************
+03/08 23:47:03 PM INFO: Best model found with accuracy  0.57236
+03/08 23:47:03 PM INFO: **********************************************************************
+03/08 23:47:03 PM INFO: Current LR: 1.000000e-04
+03/08 23:47:03 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:03 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:47:03 PM INFO: Total validation passes without improvement:      0
+03/08 23:47:03 PM INFO: ======================================================================
+03/08 23:47:03 PM INFO: ======================================================================
+03/08 23:47:03 PM INFO: | Validation      3 | iter        0 | train_loss  0.68411 |
+03/08 23:47:03 PM INFO: | Validation      3 | iter      100 | train_loss  0.69410 |
+03/08 23:47:03 PM INFO: | Validation      3 | iter      200 | train_loss  0.54348 |
+03/08 23:47:03 PM INFO: | Validation      3 | iter      300 | train_loss  0.58076 |
+03/08 23:47:04 PM INFO: | Validation      3 | iter      400 | train_loss  0.64602 |
+03/08 23:47:04 PM INFO: | Validation      3 | iter      500 | train_loss  0.54514 |
+03/08 23:47:04 PM INFO: | Validation      3 | iter      600 | train_loss  0.67659 |
+03/08 23:47:04 PM INFO: | Validation      3 | iter      700 | train_loss  0.57870 |
+03/08 23:47:05 PM INFO: | Validation      3 | iter      800 | train_loss  0.55092 |
+03/08 23:47:05 PM INFO: | Validation      3 | iter      900 | train_loss  0.49573 |
+03/08 23:47:05 PM INFO: | Validation      3 | eval_acc  0.56746 |
+03/08 23:47:05 PM INFO: Current LR: 1.000000e-04
+03/08 23:47:05 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:05 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:47:05 PM INFO: Total validation passes without improvement:      1
+03/08 23:47:05 PM INFO: ======================================================================
+03/08 23:47:05 PM INFO: ======================================================================
+03/08 23:47:05 PM INFO: | Validation      4 | iter        0 | train_loss  0.71716 |
+03/08 23:47:05 PM INFO: | Validation      4 | iter      100 | train_loss  0.61108 |
+03/08 23:47:05 PM INFO: | Validation      4 | iter      200 | train_loss  0.73528 |
+03/08 23:47:06 PM INFO: | Validation      4 | iter      300 | train_loss  0.58038 |
+03/08 23:47:06 PM INFO: | Validation      4 | iter      400 | train_loss  0.59195 |
+03/08 23:47:06 PM INFO: | Validation      4 | iter      500 | train_loss  0.60979 |
+03/08 23:47:06 PM INFO: | Validation      4 | iter      600 | train_loss  0.59051 |
+03/08 23:47:07 PM INFO: | Validation      4 | iter      700 | train_loss  0.63810 |
+03/08 23:47:07 PM INFO: | Validation      4 | iter      800 | train_loss  0.56995 |
+03/08 23:47:07 PM INFO: | Validation      4 | iter      900 | train_loss  0.48676 |
+03/08 23:47:07 PM INFO: | Validation      4 | eval_acc  0.56474 |
+03/08 23:47:07 PM INFO: Current LR: 1.000000e-04
+03/08 23:47:07 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:07 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:47:07 PM INFO: Total validation passes without improvement:      2
+03/08 23:47:07 PM INFO: ======================================================================
+03/08 23:47:07 PM INFO: ======================================================================
+03/08 23:47:07 PM INFO: | Validation      5 | iter        0 | train_loss  0.62156 |
+03/08 23:47:07 PM INFO: | Validation      5 | iter      100 | train_loss  0.60580 |
+03/08 23:47:08 PM INFO: | Validation      5 | iter      200 | train_loss  0.59570 |
+03/08 23:47:08 PM INFO: | Validation      5 | iter      300 | train_loss  0.42944 |
+03/08 23:47:08 PM INFO: | Validation      5 | iter      400 | train_loss  0.55790 |
+03/08 23:47:08 PM INFO: | Validation      5 | iter      500 | train_loss  0.50938 |
+03/08 23:47:08 PM INFO: | Validation      5 | iter      600 | train_loss  0.61874 |
+03/08 23:47:09 PM INFO: | Validation      5 | iter      700 | train_loss  0.53460 |
+03/08 23:47:09 PM INFO: | Validation      5 | iter      800 | train_loss  0.48835 |
+03/08 23:47:09 PM INFO: | Validation      5 | iter      900 | train_loss  0.57791 |
+03/08 23:47:09 PM INFO: | Validation      5 | eval_acc  0.56257 |
+03/08 23:47:09 PM INFO: Current LR: 1.000000e-04
+03/08 23:47:09 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:09 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:47:09 PM INFO: Total validation passes without improvement:      3
+03/08 23:47:09 PM INFO: ======================================================================
+03/08 23:47:09 PM INFO: ======================================================================
+03/08 23:47:09 PM INFO: | Validation      6 | iter        0 | train_loss  0.53080 |
+03/08 23:47:10 PM INFO: | Validation      6 | iter      100 | train_loss  0.57316 |
+03/08 23:47:10 PM INFO: | Validation      6 | iter      200 | train_loss  0.62594 |
+03/08 23:47:10 PM INFO: | Validation      6 | iter      300 | train_loss  0.49888 |
+03/08 23:47:10 PM INFO: | Validation      6 | iter      400 | train_loss  0.56284 |
+03/08 23:47:10 PM INFO: | Validation      6 | iter      500 | train_loss  0.47581 |
+03/08 23:47:11 PM INFO: | Validation      6 | iter      600 | train_loss  0.45565 |
+03/08 23:47:11 PM INFO: | Validation      6 | iter      700 | train_loss  0.53517 |
+03/08 23:47:11 PM INFO: | Validation      6 | iter      800 | train_loss  0.59657 |
+03/08 23:47:11 PM INFO: | Validation      6 | iter      900 | train_loss  0.46307 |
+03/08 23:47:11 PM INFO: | Validation      6 | eval_acc  0.57073 |
+03/08 23:47:11 PM INFO: Current LR: 1.000000e-04
+03/08 23:47:11 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:11 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:47:11 PM INFO: Total validation passes without improvement:      4
+03/08 23:47:11 PM INFO: ======================================================================
+03/08 23:47:11 PM INFO: ======================================================================
+03/08 23:47:11 PM INFO: | Validation      7 | iter        0 | train_loss  0.35857 |
+03/08 23:47:12 PM INFO: | Validation      7 | iter      100 | train_loss  0.38587 |
+03/08 23:47:12 PM INFO: | Validation      7 | iter      200 | train_loss  0.41855 |
+03/08 23:47:12 PM INFO: | Validation      7 | iter      300 | train_loss  0.34461 |
+03/08 23:47:12 PM INFO: | Validation      7 | iter      400 | train_loss  0.44813 |
+03/08 23:47:12 PM INFO: | Validation      7 | iter      500 | train_loss  0.39782 |
+03/08 23:47:13 PM INFO: | Validation      7 | iter      600 | train_loss  0.48601 |
+03/08 23:47:13 PM INFO: | Validation      7 | iter      700 | train_loss  0.47929 |
+03/08 23:47:13 PM INFO: | Validation      7 | iter      800 | train_loss  0.48111 |
+03/08 23:47:13 PM INFO: | Validation      7 | iter      900 | train_loss  0.35341 |
+03/08 23:47:14 PM INFO: | Validation      7 | eval_acc  0.56638 |
+03/08 23:47:14 PM INFO: Current LR: 1.000000e-04
+03/08 23:47:14 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:14 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:47:14 PM INFO: Total validation passes without improvement:      5
+03/08 23:47:14 PM INFO: ======================================================================
+03/08 23:47:14 PM INFO: ======================================================================
+03/08 23:47:14 PM INFO: | Validation      8 | iter        0 | train_loss  0.48362 |
+03/08 23:47:14 PM INFO: | Validation      8 | iter      100 | train_loss  0.41513 |
+03/08 23:47:14 PM INFO: | Validation      8 | iter      200 | train_loss  0.37953 |
+03/08 23:47:14 PM INFO: | Validation      8 | iter      300 | train_loss  0.45070 |
+03/08 23:47:14 PM INFO: | Validation      8 | iter      400 | train_loss  0.38679 |
+03/08 23:47:15 PM INFO: | Validation      8 | iter      500 | train_loss  0.52224 |
+03/08 23:47:15 PM INFO: | Validation      8 | iter      600 | train_loss  0.33664 |
+03/08 23:47:15 PM INFO: | Validation      8 | iter      700 | train_loss  0.46318 |
+03/08 23:47:15 PM INFO: | Validation      8 | iter      800 | train_loss  0.43072 |
+03/08 23:47:15 PM INFO: | Validation      8 | iter      900 | train_loss  0.44538 |
+03/08 23:47:16 PM INFO: | Validation      8 | eval_acc  0.56474 |
+03/08 23:47:16 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:16 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:16 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:47:16 PM INFO: Total validation passes without improvement:      6
+03/08 23:47:16 PM INFO: ======================================================================
+03/08 23:47:16 PM INFO: ======================================================================
+03/08 23:47:16 PM INFO: | Validation      9 | iter        0 | train_loss  0.54742 |
+03/08 23:47:16 PM INFO: | Validation      9 | iter      100 | train_loss  0.39296 |
+03/08 23:47:16 PM INFO: | Validation      9 | iter      200 | train_loss  0.34487 |
+03/08 23:47:16 PM INFO: | Validation      9 | iter      300 | train_loss  0.49230 |
+03/08 23:47:17 PM INFO: | Validation      9 | iter      400 | train_loss  0.45687 |
+03/08 23:47:17 PM INFO: | Validation      9 | iter      500 | train_loss  0.38072 |
+03/08 23:47:17 PM INFO: | Validation      9 | iter      600 | train_loss  0.39201 |
+03/08 23:47:17 PM INFO: | Validation      9 | iter      700 | train_loss  0.44513 |
+03/08 23:47:17 PM INFO: | Validation      9 | iter      800 | train_loss  0.49483 |
+03/08 23:47:18 PM INFO: | Validation      9 | iter      900 | train_loss  0.42296 |
+03/08 23:47:18 PM INFO: | Validation      9 | eval_acc  0.55767 |
+03/08 23:47:18 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:18 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:18 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:47:18 PM INFO: Total validation passes without improvement:      7
+03/08 23:47:18 PM INFO: ======================================================================
+03/08 23:47:18 PM INFO: ======================================================================
+03/08 23:47:18 PM INFO: | Validation     10 | iter        0 | train_loss  0.31836 |
+03/08 23:47:18 PM INFO: | Validation     10 | iter      100 | train_loss  0.42138 |
+03/08 23:47:18 PM INFO: | Validation     10 | iter      200 | train_loss  0.29448 |
+03/08 23:47:18 PM INFO: | Validation     10 | iter      300 | train_loss  0.26183 |
+03/08 23:47:19 PM INFO: | Validation     10 | iter      400 | train_loss  0.29643 |
+03/08 23:47:19 PM INFO: | Validation     10 | iter      500 | train_loss  0.33045 |
+03/08 23:47:19 PM INFO: | Validation     10 | iter      600 | train_loss  0.39185 |
+03/08 23:47:19 PM INFO: | Validation     10 | iter      700 | train_loss  0.37554 |
+03/08 23:47:19 PM INFO: | Validation     10 | iter      800 | train_loss  0.26978 |
+03/08 23:47:20 PM INFO: | Validation     10 | iter      900 | train_loss  0.35575 |
+03/08 23:47:20 PM INFO: | Validation     10 | eval_acc  0.56420 |
+03/08 23:47:20 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:20 PM INFO: Best accuracy  0.57236 at Step 2
+03/08 23:47:20 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:47:20 PM INFO: Total validation passes without improvement:      8
+03/08 23:47:20 PM INFO: ======================================================================
+03/08 23:47:20 PM INFO: ======================================================================
+03/08 23:47:20 PM INFO: | Validation     11 | iter        0 | train_loss  0.41075 |
+03/08 23:47:20 PM INFO: | Validation     11 | iter      100 | train_loss  0.33097 |
+03/08 23:47:20 PM INFO: | Validation     11 | iter      200 | train_loss  0.33683 |
+03/08 23:47:21 PM INFO: | Validation     11 | iter      300 | train_loss  0.34009 |
+03/08 23:47:21 PM INFO: | Validation     11 | iter      400 | train_loss  0.33318 |
+03/08 23:47:21 PM INFO: | Validation     11 | iter      500 | train_loss  0.45301 |
+03/08 23:47:21 PM INFO: | Validation     11 | iter      600 | train_loss  0.31497 |
+03/08 23:47:21 PM INFO: | Validation     11 | iter      700 | train_loss  0.31545 |
+03/08 23:47:22 PM INFO: | Validation     11 | iter      800 | train_loss  0.30176 |
+03/08 23:47:22 PM INFO: | Validation     11 | iter      900 | train_loss  0.32974 |
+03/08 23:47:22 PM INFO: | Validation     11 | eval_acc  0.57345 |
+03/08 23:47:22 PM INFO: **********************************************************************
+03/08 23:47:22 PM INFO: Best model found with accuracy  0.57345
+03/08 23:47:22 PM INFO: **********************************************************************
+03/08 23:47:22 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:22 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:22 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:47:22 PM INFO: Total validation passes without improvement:      0
+03/08 23:47:22 PM INFO: ======================================================================
+03/08 23:47:22 PM INFO: ======================================================================
+03/08 23:47:22 PM INFO: | Validation     12 | iter        0 | train_loss  0.33854 |
+03/08 23:47:22 PM INFO: | Validation     12 | iter      100 | train_loss  0.36034 |
+03/08 23:47:23 PM INFO: | Validation     12 | iter      200 | train_loss  0.37080 |
+03/08 23:47:23 PM INFO: | Validation     12 | iter      300 | train_loss  0.38783 |
+03/08 23:47:23 PM INFO: | Validation     12 | iter      400 | train_loss  0.24012 |
+03/08 23:47:23 PM INFO: | Validation     12 | iter      500 | train_loss  0.24612 |
+03/08 23:47:23 PM INFO: | Validation     12 | iter      600 | train_loss  0.37033 |
+03/08 23:47:24 PM INFO: | Validation     12 | iter      700 | train_loss  0.37649 |
+03/08 23:47:24 PM INFO: | Validation     12 | iter      800 | train_loss  0.30179 |
+03/08 23:47:24 PM INFO: | Validation     12 | iter      900 | train_loss  0.30159 |
+03/08 23:47:24 PM INFO: | Validation     12 | eval_acc  0.56094 |
+03/08 23:47:24 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:24 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:24 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:47:24 PM INFO: Total validation passes without improvement:      1
+03/08 23:47:24 PM INFO: ======================================================================
+03/08 23:47:24 PM INFO: ======================================================================
+03/08 23:47:24 PM INFO: | Validation     13 | iter        0 | train_loss  0.37525 |
+03/08 23:47:25 PM INFO: | Validation     13 | iter      100 | train_loss  0.39785 |
+03/08 23:47:25 PM INFO: | Validation     13 | iter      200 | train_loss  0.31207 |
+03/08 23:47:25 PM INFO: | Validation     13 | iter      300 | train_loss  0.27841 |
+03/08 23:47:25 PM INFO: | Validation     13 | iter      400 | train_loss  0.27140 |
+03/08 23:47:25 PM INFO: | Validation     13 | iter      500 | train_loss  0.26714 |
+03/08 23:47:26 PM INFO: | Validation     13 | iter      600 | train_loss  0.34608 |
+03/08 23:47:26 PM INFO: | Validation     13 | iter      700 | train_loss  0.33748 |
+03/08 23:47:26 PM INFO: | Validation     13 | iter      800 | train_loss  0.21687 |
+03/08 23:47:26 PM INFO: | Validation     13 | iter      900 | train_loss  0.22132 |
+03/08 23:47:27 PM INFO: | Validation     13 | eval_acc  0.56366 |
+03/08 23:47:27 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:27 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:27 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:47:27 PM INFO: Total validation passes without improvement:      2
+03/08 23:47:27 PM INFO: ======================================================================
+03/08 23:47:27 PM INFO: ======================================================================
+03/08 23:47:27 PM INFO: | Validation     14 | iter        0 | train_loss  0.25784 |
+03/08 23:47:27 PM INFO: | Validation     14 | iter      100 | train_loss  0.25132 |
+03/08 23:47:27 PM INFO: | Validation     14 | iter      200 | train_loss  0.26594 |
+03/08 23:47:27 PM INFO: | Validation     14 | iter      300 | train_loss  0.28696 |
+03/08 23:47:27 PM INFO: | Validation     14 | iter      400 | train_loss  0.20743 |
+03/08 23:47:28 PM INFO: | Validation     14 | iter      500 | train_loss  0.22768 |
+03/08 23:47:28 PM INFO: | Validation     14 | iter      600 | train_loss  0.21923 |
+03/08 23:47:28 PM INFO: | Validation     14 | iter      700 | train_loss  0.24683 |
+03/08 23:47:28 PM INFO: | Validation     14 | iter      800 | train_loss  0.24404 |
+03/08 23:47:29 PM INFO: | Validation     14 | iter      900 | train_loss  0.20059 |
+03/08 23:47:29 PM INFO: | Validation     14 | eval_acc  0.55985 |
+03/08 23:47:29 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:29 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:29 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:47:29 PM INFO: Total validation passes without improvement:      3
+03/08 23:47:29 PM INFO: ======================================================================
+03/08 23:47:29 PM INFO: ======================================================================
+03/08 23:47:29 PM INFO: | Validation     15 | iter        0 | train_loss  0.32749 |
+03/08 23:47:29 PM INFO: | Validation     15 | iter      100 | train_loss  0.24311 |
+03/08 23:47:29 PM INFO: | Validation     15 | iter      200 | train_loss  0.22670 |
+03/08 23:47:29 PM INFO: | Validation     15 | iter      300 | train_loss  0.27089 |
+03/08 23:47:30 PM INFO: | Validation     15 | iter      400 | train_loss  0.22198 |
+03/08 23:47:30 PM INFO: | Validation     15 | iter      500 | train_loss  0.28000 |
+03/08 23:47:30 PM INFO: | Validation     15 | iter      600 | train_loss  0.26683 |
+03/08 23:47:30 PM INFO: | Validation     15 | iter      700 | train_loss  0.26373 |
+03/08 23:47:31 PM INFO: | Validation     15 | iter      800 | train_loss  0.27682 |
+03/08 23:47:31 PM INFO: | Validation     15 | iter      900 | train_loss  0.26195 |
+03/08 23:47:31 PM INFO: | Validation     15 | eval_acc  0.56583 |
+03/08 23:47:31 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:31 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:31 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:47:31 PM INFO: Total validation passes without improvement:      4
+03/08 23:47:31 PM INFO: ======================================================================
+03/08 23:47:31 PM INFO: ======================================================================
+03/08 23:47:31 PM INFO: | Validation     16 | iter        0 | train_loss  0.23655 |
+03/08 23:47:31 PM INFO: | Validation     16 | iter      100 | train_loss  0.22382 |
+03/08 23:47:31 PM INFO: | Validation     16 | iter      200 | train_loss  0.23692 |
+03/08 23:47:32 PM INFO: | Validation     16 | iter      300 | train_loss  0.27204 |
+03/08 23:47:32 PM INFO: | Validation     16 | iter      400 | train_loss  0.25429 |
+03/08 23:47:32 PM INFO: | Validation     16 | iter      500 | train_loss  0.25039 |
+03/08 23:47:32 PM INFO: | Validation     16 | iter      600 | train_loss  0.25687 |
+03/08 23:47:33 PM INFO: | Validation     16 | iter      700 | train_loss  0.13506 |
+03/08 23:47:33 PM INFO: | Validation     16 | iter      800 | train_loss  0.20657 |
+03/08 23:47:33 PM INFO: | Validation     16 | iter      900 | train_loss  0.17603 |
+03/08 23:47:33 PM INFO: | Validation     16 | eval_acc  0.55767 |
+03/08 23:47:33 PM INFO: Current LR: 5.000000e-05
+03/08 23:47:33 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:33 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:47:33 PM INFO: Total validation passes without improvement:      5
+03/08 23:47:33 PM INFO: ======================================================================
+03/08 23:47:33 PM INFO: ======================================================================
+03/08 23:47:33 PM INFO: | Validation     17 | iter        0 | train_loss  0.19472 |
+03/08 23:47:33 PM INFO: | Validation     17 | iter      100 | train_loss  0.24388 |
+03/08 23:47:34 PM INFO: | Validation     17 | iter      200 | train_loss  0.24536 |
+03/08 23:47:34 PM INFO: | Validation     17 | iter      300 | train_loss  0.24391 |
+03/08 23:47:34 PM INFO: | Validation     17 | iter      400 | train_loss  0.23768 |
+03/08 23:47:34 PM INFO: | Validation     17 | iter      500 | train_loss  0.29309 |
+03/08 23:47:35 PM INFO: | Validation     17 | iter      600 | train_loss  0.20790 |
+03/08 23:47:35 PM INFO: | Validation     17 | iter      700 | train_loss  0.22851 |
+03/08 23:47:35 PM INFO: | Validation     17 | iter      800 | train_loss  0.24364 |
+03/08 23:47:35 PM INFO: | Validation     17 | iter      900 | train_loss  0.11330 |
+03/08 23:47:35 PM INFO: | Validation     17 | eval_acc  0.56638 |
+03/08 23:47:35 PM INFO: Current LR: 2.500000e-05
+03/08 23:47:35 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:35 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:47:35 PM INFO: Total validation passes without improvement:      6
+03/08 23:47:35 PM INFO: ======================================================================
+03/08 23:47:35 PM INFO: ======================================================================
+03/08 23:47:35 PM INFO: | Validation     18 | iter        0 | train_loss  0.21368 |
+03/08 23:47:36 PM INFO: | Validation     18 | iter      100 | train_loss  0.18851 |
+03/08 23:47:36 PM INFO: | Validation     18 | iter      200 | train_loss  0.25937 |
+03/08 23:47:36 PM INFO: | Validation     18 | iter      300 | train_loss  0.19376 |
+03/08 23:47:36 PM INFO: | Validation     18 | iter      400 | train_loss  0.24417 |
+03/08 23:47:37 PM INFO: | Validation     18 | iter      500 | train_loss  0.11814 |
+03/08 23:47:37 PM INFO: | Validation     18 | iter      600 | train_loss  0.22034 |
+03/08 23:47:37 PM INFO: | Validation     18 | iter      700 | train_loss  0.24019 |
+03/08 23:47:37 PM INFO: | Validation     18 | iter      800 | train_loss  0.13520 |
+03/08 23:47:37 PM INFO: | Validation     18 | iter      900 | train_loss  0.14854 |
+03/08 23:47:38 PM INFO: | Validation     18 | eval_acc  0.56202 |
+03/08 23:47:38 PM INFO: Current LR: 2.500000e-05
+03/08 23:47:38 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:38 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:47:38 PM INFO: Total validation passes without improvement:      7
+03/08 23:47:38 PM INFO: ======================================================================
+03/08 23:47:38 PM INFO: ======================================================================
+03/08 23:47:38 PM INFO: | Validation     19 | iter        0 | train_loss  0.20941 |
+03/08 23:47:38 PM INFO: | Validation     19 | iter      100 | train_loss  0.17883 |
+03/08 23:47:38 PM INFO: | Validation     19 | iter      200 | train_loss  0.18883 |
+03/08 23:47:38 PM INFO: | Validation     19 | iter      300 | train_loss  0.20664 |
+03/08 23:47:39 PM INFO: | Validation     19 | iter      400 | train_loss  0.24364 |
+03/08 23:47:39 PM INFO: | Validation     19 | iter      500 | train_loss  0.13738 |
+03/08 23:47:39 PM INFO: | Validation     19 | iter      600 | train_loss  0.22823 |
+03/08 23:47:39 PM INFO: | Validation     19 | iter      700 | train_loss  0.19852 |
+03/08 23:47:39 PM INFO: | Validation     19 | iter      800 | train_loss  0.17836 |
+03/08 23:47:40 PM INFO: | Validation     19 | iter      900 | train_loss  0.17565 |
+03/08 23:47:40 PM INFO: | Validation     19 | eval_acc  0.55822 |
+03/08 23:47:40 PM INFO: Current LR: 2.500000e-05
+03/08 23:47:40 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:40 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:47:40 PM INFO: Total validation passes without improvement:      8
+03/08 23:47:40 PM INFO: ======================================================================
+03/08 23:47:40 PM INFO: ======================================================================
+03/08 23:47:40 PM INFO: | Validation     20 | iter        0 | train_loss  0.16016 |
+03/08 23:47:40 PM INFO: | Validation     20 | iter      100 | train_loss  0.17867 |
+03/08 23:47:40 PM INFO: | Validation     20 | iter      200 | train_loss  0.19049 |
+03/08 23:47:41 PM INFO: | Validation     20 | iter      300 | train_loss  0.20121 |
+03/08 23:47:41 PM INFO: | Validation     20 | iter      400 | train_loss  0.18311 |
+03/08 23:47:41 PM INFO: | Validation     20 | iter      500 | train_loss  0.21556 |
+03/08 23:47:41 PM INFO: | Validation     20 | iter      600 | train_loss  0.19754 |
+03/08 23:47:41 PM INFO: | Validation     20 | iter      700 | train_loss  0.13220 |
+03/08 23:47:42 PM INFO: | Validation     20 | iter      800 | train_loss  0.13491 |
+03/08 23:47:42 PM INFO: | Validation     20 | iter      900 | train_loss  0.18604 |
+03/08 23:47:42 PM INFO: | Validation     20 | eval_acc  0.56094 |
+03/08 23:47:42 PM INFO: Current LR: 2.500000e-05
+03/08 23:47:42 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:42 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:47:42 PM INFO: Total validation passes without improvement:      9
+03/08 23:47:42 PM INFO: ======================================================================
+03/08 23:47:42 PM INFO: ======================================================================
+03/08 23:47:42 PM INFO: | Validation     21 | iter        0 | train_loss  0.18591 |
+03/08 23:47:42 PM INFO: | Validation     21 | iter      100 | train_loss  0.15453 |
+03/08 23:47:43 PM INFO: | Validation     21 | iter      200 | train_loss  0.12690 |
+03/08 23:47:43 PM INFO: | Validation     21 | iter      300 | train_loss  0.12085 |
+03/08 23:47:43 PM INFO: | Validation     21 | iter      400 | train_loss  0.17693 |
+03/08 23:47:43 PM INFO: | Validation     21 | iter      500 | train_loss  0.16948 |
+03/08 23:47:43 PM INFO: | Validation     21 | iter      600 | train_loss  0.17214 |
+03/08 23:47:44 PM INFO: | Validation     21 | iter      700 | train_loss  0.14573 |
+03/08 23:47:44 PM INFO: | Validation     21 | iter      800 | train_loss  0.11758 |
+03/08 23:47:44 PM INFO: | Validation     21 | iter      900 | train_loss  0.16381 |
+03/08 23:47:44 PM INFO: | Validation     21 | eval_acc  0.56257 |
+03/08 23:47:44 PM INFO: Current LR: 2.500000e-05
+03/08 23:47:44 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:44 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:47:44 PM INFO: Total validation passes without improvement:     10
+03/08 23:47:44 PM INFO: ======================================================================
+03/08 23:47:44 PM INFO: ======================================================================
+03/08 23:47:44 PM INFO: | Validation     22 | iter        0 | train_loss  0.13037 |
+03/08 23:47:44 PM INFO: | Validation     22 | iter      100 | train_loss  0.12551 |
+03/08 23:47:45 PM INFO: | Validation     22 | iter      200 | train_loss  0.19408 |
+03/08 23:47:45 PM INFO: | Validation     22 | iter      300 | train_loss  0.10347 |
+03/08 23:47:45 PM INFO: | Validation     22 | iter      400 | train_loss  0.07798 |
+03/08 23:47:45 PM INFO: | Validation     22 | iter      500 | train_loss  0.15126 |
+03/08 23:47:46 PM INFO: | Validation     22 | iter      600 | train_loss  0.11623 |
+03/08 23:47:46 PM INFO: | Validation     22 | iter      700 | train_loss  0.10949 |
+03/08 23:47:46 PM INFO: | Validation     22 | iter      800 | train_loss  0.11095 |
+03/08 23:47:46 PM INFO: | Validation     22 | iter      900 | train_loss  0.13487 |
+03/08 23:47:46 PM INFO: | Validation     22 | eval_acc  0.55930 |
+03/08 23:47:46 PM INFO: Current LR: 2.500000e-05
+03/08 23:47:46 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:46 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:47:46 PM INFO: Total validation passes without improvement:     11
+03/08 23:47:46 PM INFO: ======================================================================
+03/08 23:47:46 PM INFO: ======================================================================
+03/08 23:47:46 PM INFO: | Validation     23 | iter        0 | train_loss  0.13697 |
+03/08 23:47:47 PM INFO: | Validation     23 | iter      100 | train_loss  0.15391 |
+03/08 23:47:47 PM INFO: | Validation     23 | iter      200 | train_loss  0.19408 |
+03/08 23:47:47 PM INFO: | Validation     23 | iter      300 | train_loss  0.13881 |
+03/08 23:47:47 PM INFO: | Validation     23 | iter      400 | train_loss  0.10741 |
+03/08 23:47:47 PM INFO: | Validation     23 | iter      500 | train_loss  0.12401 |
+03/08 23:47:48 PM INFO: | Validation     23 | iter      600 | train_loss  0.13263 |
+03/08 23:47:48 PM INFO: | Validation     23 | iter      700 | train_loss  0.17095 |
+03/08 23:47:48 PM INFO: | Validation     23 | iter      800 | train_loss  0.07930 |
+03/08 23:47:48 PM INFO: | Validation     23 | iter      900 | train_loss  0.16700 |
+03/08 23:47:49 PM INFO: | Validation     23 | eval_acc  0.56257 |
+03/08 23:47:49 PM INFO: Current LR: 1.250000e-05
+03/08 23:47:49 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:49 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:47:49 PM INFO: Total validation passes without improvement:     12
+03/08 23:47:49 PM INFO: ======================================================================
+03/08 23:47:49 PM INFO: ======================================================================
+03/08 23:47:49 PM INFO: | Validation     24 | iter        0 | train_loss  0.15293 |
+03/08 23:47:49 PM INFO: | Validation     24 | iter      100 | train_loss  0.11443 |
+03/08 23:47:49 PM INFO: | Validation     24 | iter      200 | train_loss  0.17725 |
+03/08 23:47:49 PM INFO: | Validation     24 | iter      300 | train_loss  0.11890 |
+03/08 23:47:49 PM INFO: | Validation     24 | iter      400 | train_loss  0.10252 |
+03/08 23:47:50 PM INFO: | Validation     24 | iter      500 | train_loss  0.15165 |
+03/08 23:47:50 PM INFO: | Validation     24 | iter      600 | train_loss  0.16463 |
+03/08 23:47:50 PM INFO: | Validation     24 | iter      700 | train_loss  0.15621 |
+03/08 23:47:50 PM INFO: | Validation     24 | iter      800 | train_loss  0.10306 |
+03/08 23:47:51 PM INFO: | Validation     24 | iter      900 | train_loss  0.15267 |
+03/08 23:47:51 PM INFO: | Validation     24 | eval_acc  0.55767 |
+03/08 23:47:51 PM INFO: Current LR: 1.250000e-05
+03/08 23:47:51 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:51 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:47:51 PM INFO: Total validation passes without improvement:     13
+03/08 23:47:51 PM INFO: ======================================================================
+03/08 23:47:51 PM INFO: ======================================================================
+03/08 23:47:51 PM INFO: | Validation     25 | iter        0 | train_loss  0.15802 |
+03/08 23:47:51 PM INFO: | Validation     25 | iter      100 | train_loss  0.11313 |
+03/08 23:47:51 PM INFO: | Validation     25 | iter      200 | train_loss  0.20600 |
+03/08 23:47:51 PM INFO: | Validation     25 | iter      300 | train_loss  0.10151 |
+03/08 23:47:52 PM INFO: | Validation     25 | iter      400 | train_loss  0.10282 |
+03/08 23:47:52 PM INFO: | Validation     25 | iter      500 | train_loss  0.13988 |
+03/08 23:47:52 PM INFO: | Validation     25 | iter      600 | train_loss  0.16068 |
+03/08 23:47:52 PM INFO: | Validation     25 | iter      700 | train_loss  0.11926 |
+03/08 23:47:52 PM INFO: | Validation     25 | iter      800 | train_loss  0.11255 |
+03/08 23:47:53 PM INFO: | Validation     25 | iter      900 | train_loss  0.12921 |
+03/08 23:47:53 PM INFO: | Validation     25 | eval_acc  0.55876 |
+03/08 23:47:53 PM INFO: Current LR: 1.250000e-05
+03/08 23:47:53 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:53 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:47:53 PM INFO: Total validation passes without improvement:     14
+03/08 23:47:53 PM INFO: ======================================================================
+03/08 23:47:53 PM INFO: ======================================================================
+03/08 23:47:53 PM INFO: | Validation     26 | iter        0 | train_loss  0.11575 |
+03/08 23:47:53 PM INFO: | Validation     26 | iter      100 | train_loss  0.15262 |
+03/08 23:47:53 PM INFO: | Validation     26 | iter      200 | train_loss  0.07347 |
+03/08 23:47:54 PM INFO: | Validation     26 | iter      300 | train_loss  0.11924 |
+03/08 23:47:54 PM INFO: | Validation     26 | iter      400 | train_loss  0.11926 |
+03/08 23:47:54 PM INFO: | Validation     26 | iter      500 | train_loss  0.11622 |
+03/08 23:47:54 PM INFO: | Validation     26 | iter      600 | train_loss  0.17592 |
+03/08 23:47:54 PM INFO: | Validation     26 | iter      700 | train_loss  0.08226 |
+03/08 23:47:55 PM INFO: | Validation     26 | iter      800 | train_loss  0.08785 |
+03/08 23:47:55 PM INFO: | Validation     26 | iter      900 | train_loss  0.10030 |
+03/08 23:47:55 PM INFO: | Validation     26 | eval_acc  0.56311 |
+03/08 23:47:55 PM INFO: Current LR: 1.250000e-05
+03/08 23:47:55 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:55 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:47:55 PM INFO: Total validation passes without improvement:     15
+03/08 23:47:55 PM INFO: ======================================================================
+03/08 23:47:55 PM INFO: ======================================================================
+03/08 23:47:55 PM INFO: | Validation     27 | iter        0 | train_loss  0.11813 |
+03/08 23:47:55 PM INFO: | Validation     27 | iter      100 | train_loss  0.12807 |
+03/08 23:47:55 PM INFO: | Validation     27 | iter      200 | train_loss  0.12796 |
+03/08 23:47:56 PM INFO: | Validation     27 | iter      300 | train_loss  0.12552 |
+03/08 23:47:56 PM INFO: | Validation     27 | iter      400 | train_loss  0.15657 |
+03/08 23:47:56 PM INFO: | Validation     27 | iter      500 | train_loss  0.07034 |
+03/08 23:47:56 PM INFO: | Validation     27 | iter      600 | train_loss  0.11690 |
+03/08 23:47:56 PM INFO: | Validation     27 | iter      700 | train_loss  0.12017 |
+03/08 23:47:57 PM INFO: | Validation     27 | iter      800 | train_loss  0.08332 |
+03/08 23:47:57 PM INFO: | Validation     27 | iter      900 | train_loss  0.06354 |
+03/08 23:47:57 PM INFO: | Validation     27 | eval_acc  0.56148 |
+03/08 23:47:57 PM INFO: Current LR: 1.250000e-05
+03/08 23:47:57 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:57 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:47:57 PM INFO: Total validation passes without improvement:     16
+03/08 23:47:57 PM INFO: ======================================================================
+03/08 23:47:57 PM INFO: ======================================================================
+03/08 23:47:57 PM INFO: | Validation     28 | iter        0 | train_loss  0.12593 |
+03/08 23:47:57 PM INFO: | Validation     28 | iter      100 | train_loss  0.13585 |
+03/08 23:47:57 PM INFO: | Validation     28 | iter      200 | train_loss  0.08742 |
+03/08 23:47:58 PM INFO: | Validation     28 | iter      300 | train_loss  0.14524 |
+03/08 23:47:58 PM INFO: | Validation     28 | iter      400 | train_loss  0.10524 |
+03/08 23:47:58 PM INFO: | Validation     28 | iter      500 | train_loss  0.09705 |
+03/08 23:47:58 PM INFO: | Validation     28 | iter      600 | train_loss  0.12655 |
+03/08 23:47:58 PM INFO: | Validation     28 | iter      700 | train_loss  0.09877 |
+03/08 23:47:59 PM INFO: | Validation     28 | iter      800 | train_loss  0.10365 |
+03/08 23:47:59 PM INFO: | Validation     28 | iter      900 | train_loss  0.08536 |
+03/08 23:47:59 PM INFO: | Validation     28 | eval_acc  0.56148 |
+03/08 23:47:59 PM INFO: Current LR: 1.250000e-05
+03/08 23:47:59 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:47:59 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:47:59 PM INFO: Total validation passes without improvement:     17
+03/08 23:47:59 PM INFO: ======================================================================
+03/08 23:47:59 PM INFO: ======================================================================
+03/08 23:47:59 PM INFO: | Validation     29 | iter        0 | train_loss  0.10252 |
+03/08 23:47:59 PM INFO: | Validation     29 | iter      100 | train_loss  0.09986 |
+03/08 23:48:00 PM INFO: | Validation     29 | iter      200 | train_loss  0.17023 |
+03/08 23:48:00 PM INFO: | Validation     29 | iter      300 | train_loss  0.09742 |
+03/08 23:48:00 PM INFO: | Validation     29 | iter      400 | train_loss  0.12512 |
+03/08 23:48:00 PM INFO: | Validation     29 | iter      500 | train_loss  0.10420 |
+03/08 23:48:00 PM INFO: | Validation     29 | iter      600 | train_loss  0.11406 |
+03/08 23:48:01 PM INFO: | Validation     29 | iter      700 | train_loss  0.09559 |
+03/08 23:48:01 PM INFO: | Validation     29 | iter      800 | train_loss  0.14111 |
+03/08 23:48:01 PM INFO: | Validation     29 | iter      900 | train_loss  0.07773 |
+03/08 23:48:01 PM INFO: | Validation     29 | eval_acc  0.56094 |
+03/08 23:48:01 PM INFO: Current LR: 6.250000e-06
+03/08 23:48:01 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:48:01 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:48:01 PM INFO: Total validation passes without improvement:     18
+03/08 23:48:01 PM INFO: ======================================================================
+03/08 23:48:01 PM INFO: ======================================================================
+03/08 23:48:01 PM INFO: | Validation     30 | iter        0 | train_loss  0.16445 |
+03/08 23:48:02 PM INFO: | Validation     30 | iter      100 | train_loss  0.12190 |
+03/08 23:48:02 PM INFO: | Validation     30 | iter      200 | train_loss  0.10531 |
+03/08 23:48:02 PM INFO: | Validation     30 | iter      300 | train_loss  0.12382 |
+03/08 23:48:02 PM INFO: | Validation     30 | iter      400 | train_loss  0.08326 |
+03/08 23:48:02 PM INFO: | Validation     30 | iter      500 | train_loss  0.16549 |
+03/08 23:48:03 PM INFO: | Validation     30 | iter      600 | train_loss  0.08465 |
+03/08 23:48:03 PM INFO: | Validation     30 | iter      700 | train_loss  0.12855 |
+03/08 23:48:03 PM INFO: | Validation     30 | iter      800 | train_loss  0.11963 |
+03/08 23:48:03 PM INFO: | Validation     30 | iter      900 | train_loss  0.07353 |
+03/08 23:48:04 PM INFO: | Validation     30 | eval_acc  0.56148 |
+03/08 23:48:04 PM INFO: Current LR: 6.250000e-06
+03/08 23:48:04 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:48:04 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:48:04 PM INFO: Total validation passes without improvement:     19
+03/08 23:48:04 PM INFO: ======================================================================
+03/08 23:48:04 PM INFO: ======================================================================
+03/08 23:48:04 PM INFO: | Validation     31 | iter        0 | train_loss  0.12087 |
+03/08 23:48:04 PM INFO: | Validation     31 | iter      100 | train_loss  0.10498 |
+03/08 23:48:04 PM INFO: | Validation     31 | iter      200 | train_loss  0.07879 |
+03/08 23:48:04 PM INFO: | Validation     31 | iter      300 | train_loss  0.12318 |
+03/08 23:48:04 PM INFO: | Validation     31 | iter      400 | train_loss  0.09089 |
+03/08 23:48:05 PM INFO: | Validation     31 | iter      500 | train_loss  0.09428 |
+03/08 23:48:05 PM INFO: | Validation     31 | iter      600 | train_loss  0.13161 |
+03/08 23:48:05 PM INFO: | Validation     31 | iter      700 | train_loss  0.10698 |
+03/08 23:48:05 PM INFO: | Validation     31 | iter      800 | train_loss  0.10482 |
+03/08 23:48:05 PM INFO: | Validation     31 | iter      900 | train_loss  0.06269 |
+03/08 23:48:06 PM INFO: | Validation     31 | eval_acc  0.56094 |
+03/08 23:48:06 PM INFO: Current LR: 6.250000e-06
+03/08 23:48:06 PM INFO: Best accuracy  0.57345 at Step 11
+03/08 23:48:06 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:48:06 PM INFO: Total validation passes without improvement:     20
+03/08 23:48:06 PM INFO: ======================================================================
+03/08 23:48:06 PM INFO: Stopped training after 32 validation checks
+03/08 23:48:06 PM INFO: Trained for 32000 steps (batches) or 127.094452 epochs
+03/08 23:48:06 PM INFO: Best model found with accuracy  0.57345 at Validation 11
+03/08 23:48:06 PM INFO: Output predictions to ./outputs/piqa/probing_VideoBERT_topmask_text_mlp_R5_S1000_B32_LR0.0001
+03/08 23:48:06 PM INFO: ######################################################################
+03/08 23:48:06 PM INFO: ######################################################################
+03/08 23:48:06 PM INFO: ======================================================================
+03/08 23:48:06 PM INFO: | Validation      0 | iter        0 | train_loss  0.72920 |
+03/08 23:48:06 PM INFO: | Validation      0 | iter      100 | train_loss  0.65377 |
+03/08 23:48:06 PM INFO: | Validation      0 | iter      200 | train_loss  0.68170 |
+03/08 23:48:06 PM INFO: | Validation      0 | iter      300 | train_loss  0.69154 |
+03/08 23:48:07 PM INFO: | Validation      0 | iter      400 | train_loss  0.59681 |
+03/08 23:48:07 PM INFO: | Validation      0 | iter      500 | train_loss  0.58822 |
+03/08 23:48:07 PM INFO: | Validation      0 | iter      600 | train_loss  0.66954 |
+03/08 23:48:07 PM INFO: | Validation      0 | iter      700 | train_loss  0.61351 |
+03/08 23:48:07 PM INFO: | Validation      0 | iter      800 | train_loss  0.75343 |
+03/08 23:48:08 PM INFO: | Validation      0 | iter      900 | train_loss  0.65012 |
+03/08 23:48:08 PM INFO: | Validation      0 | eval_acc  0.56202 |
+03/08 23:48:08 PM INFO: **********************************************************************
+03/08 23:48:08 PM INFO: Best model found with accuracy  0.56202
+03/08 23:48:08 PM INFO: **********************************************************************
+03/08 23:48:08 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:08 PM INFO: Best accuracy  0.56202 at Step 0
+03/08 23:48:08 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:48:08 PM INFO: Total validation passes without improvement:      0
+03/08 23:48:08 PM INFO: ======================================================================
+03/08 23:48:08 PM INFO: ======================================================================
+03/08 23:48:08 PM INFO: | Validation      1 | iter        0 | train_loss  0.65359 |
+03/08 23:48:08 PM INFO: | Validation      1 | iter      100 | train_loss  0.67566 |
+03/08 23:48:08 PM INFO: | Validation      1 | iter      200 | train_loss  0.63078 |
+03/08 23:48:09 PM INFO: | Validation      1 | iter      300 | train_loss  0.67066 |
+03/08 23:48:09 PM INFO: | Validation      1 | iter      400 | train_loss  0.63286 |
+03/08 23:48:09 PM INFO: | Validation      1 | iter      500 | train_loss  0.64376 |
+03/08 23:48:09 PM INFO: | Validation      1 | iter      600 | train_loss  0.61831 |
+03/08 23:48:09 PM INFO: | Validation      1 | iter      700 | train_loss  0.59471 |
+03/08 23:48:10 PM INFO: | Validation      1 | iter      800 | train_loss  0.69000 |
+03/08 23:48:10 PM INFO: | Validation      1 | iter      900 | train_loss  0.63412 |
+03/08 23:48:10 PM INFO: | Validation      1 | eval_acc  0.56964 |
+03/08 23:48:10 PM INFO: **********************************************************************
+03/08 23:48:10 PM INFO: Best model found with accuracy  0.56964
+03/08 23:48:10 PM INFO: **********************************************************************
+03/08 23:48:10 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:10 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:10 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:48:10 PM INFO: Total validation passes without improvement:      0
+03/08 23:48:10 PM INFO: ======================================================================
+03/08 23:48:10 PM INFO: ======================================================================
+03/08 23:48:10 PM INFO: | Validation      2 | iter        0 | train_loss  0.55600 |
+03/08 23:48:10 PM INFO: | Validation      2 | iter      100 | train_loss  0.66763 |
+03/08 23:48:10 PM INFO: | Validation      2 | iter      200 | train_loss  0.57157 |
+03/08 23:48:11 PM INFO: | Validation      2 | iter      300 | train_loss  0.54682 |
+03/08 23:48:11 PM INFO: | Validation      2 | iter      400 | train_loss  0.57986 |
+03/08 23:48:11 PM INFO: | Validation      2 | iter      500 | train_loss  0.66941 |
+03/08 23:48:11 PM INFO: | Validation      2 | iter      600 | train_loss  0.69963 |
+03/08 23:48:12 PM INFO: | Validation      2 | iter      700 | train_loss  0.58378 |
+03/08 23:48:12 PM INFO: | Validation      2 | iter      800 | train_loss  0.54944 |
+03/08 23:48:12 PM INFO: | Validation      2 | iter      900 | train_loss  0.72396 |
+03/08 23:48:12 PM INFO: | Validation      2 | eval_acc  0.56801 |
+03/08 23:48:12 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:12 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:12 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:48:12 PM INFO: Total validation passes without improvement:      1
+03/08 23:48:12 PM INFO: ======================================================================
+03/08 23:48:12 PM INFO: ======================================================================
+03/08 23:48:12 PM INFO: | Validation      3 | iter        0 | train_loss  0.68344 |
+03/08 23:48:12 PM INFO: | Validation      3 | iter      100 | train_loss  0.59749 |
+03/08 23:48:13 PM INFO: | Validation      3 | iter      200 | train_loss  0.64727 |
+03/08 23:48:13 PM INFO: | Validation      3 | iter      300 | train_loss  0.65099 |
+03/08 23:48:13 PM INFO: | Validation      3 | iter      400 | train_loss  0.57349 |
+03/08 23:48:13 PM INFO: | Validation      3 | iter      500 | train_loss  0.62426 |
+03/08 23:48:13 PM INFO: | Validation      3 | iter      600 | train_loss  0.50679 |
+03/08 23:48:14 PM INFO: | Validation      3 | iter      700 | train_loss  0.53644 |
+03/08 23:48:14 PM INFO: | Validation      3 | iter      800 | train_loss  0.60261 |
+03/08 23:48:14 PM INFO: | Validation      3 | iter      900 | train_loss  0.54909 |
+03/08 23:48:14 PM INFO: | Validation      3 | eval_acc  0.56692 |
+03/08 23:48:14 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:14 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:14 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:48:14 PM INFO: Total validation passes without improvement:      2
+03/08 23:48:14 PM INFO: ======================================================================
+03/08 23:48:14 PM INFO: ======================================================================
+03/08 23:48:14 PM INFO: | Validation      4 | iter        0 | train_loss  0.61535 |
+03/08 23:48:14 PM INFO: | Validation      4 | iter      100 | train_loss  0.52067 |
+03/08 23:48:15 PM INFO: | Validation      4 | iter      200 | train_loss  0.53919 |
+03/08 23:48:15 PM INFO: | Validation      4 | iter      300 | train_loss  0.55798 |
+03/08 23:48:15 PM INFO: | Validation      4 | iter      400 | train_loss  0.66578 |
+03/08 23:48:15 PM INFO: | Validation      4 | iter      500 | train_loss  0.58871 |
+03/08 23:48:16 PM INFO: | Validation      4 | iter      600 | train_loss  0.57068 |
+03/08 23:48:16 PM INFO: | Validation      4 | iter      700 | train_loss  0.63502 |
+03/08 23:48:16 PM INFO: | Validation      4 | iter      800 | train_loss  0.61297 |
+03/08 23:48:16 PM INFO: | Validation      4 | iter      900 | train_loss  0.60204 |
+03/08 23:48:17 PM INFO: | Validation      4 | eval_acc  0.55876 |
+03/08 23:48:17 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:17 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:17 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:48:17 PM INFO: Total validation passes without improvement:      3
+03/08 23:48:17 PM INFO: ======================================================================
+03/08 23:48:17 PM INFO: ======================================================================
+03/08 23:48:17 PM INFO: | Validation      5 | iter        0 | train_loss  0.57262 |
+03/08 23:48:17 PM INFO: | Validation      5 | iter      100 | train_loss  0.40802 |
+03/08 23:48:17 PM INFO: | Validation      5 | iter      200 | train_loss  0.54119 |
+03/08 23:48:17 PM INFO: | Validation      5 | iter      300 | train_loss  0.57357 |
+03/08 23:48:17 PM INFO: | Validation      5 | iter      400 | train_loss  0.47974 |
+03/08 23:48:18 PM INFO: | Validation      5 | iter      500 | train_loss  0.60282 |
+03/08 23:48:18 PM INFO: | Validation      5 | iter      600 | train_loss  0.46976 |
+03/08 23:48:18 PM INFO: | Validation      5 | iter      700 | train_loss  0.50619 |
+03/08 23:48:18 PM INFO: | Validation      5 | iter      800 | train_loss  0.57458 |
+03/08 23:48:18 PM INFO: | Validation      5 | iter      900 | train_loss  0.56694 |
+03/08 23:48:19 PM INFO: | Validation      5 | eval_acc  0.54570 |
+03/08 23:48:19 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:19 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:19 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:48:19 PM INFO: Total validation passes without improvement:      4
+03/08 23:48:19 PM INFO: ======================================================================
+03/08 23:48:19 PM INFO: ======================================================================
+03/08 23:48:19 PM INFO: | Validation      6 | iter        0 | train_loss  0.62742 |
+03/08 23:48:19 PM INFO: | Validation      6 | iter      100 | train_loss  0.38154 |
+03/08 23:48:19 PM INFO: | Validation      6 | iter      200 | train_loss  0.62184 |
+03/08 23:48:19 PM INFO: | Validation      6 | iter      300 | train_loss  0.49925 |
+03/08 23:48:20 PM INFO: | Validation      6 | iter      400 | train_loss  0.54073 |
+03/08 23:48:20 PM INFO: | Validation      6 | iter      500 | train_loss  0.50070 |
+03/08 23:48:20 PM INFO: | Validation      6 | iter      600 | train_loss  0.43525 |
+03/08 23:48:20 PM INFO: | Validation      6 | iter      700 | train_loss  0.48562 |
+03/08 23:48:20 PM INFO: | Validation      6 | iter      800 | train_loss  0.49745 |
+03/08 23:48:21 PM INFO: | Validation      6 | iter      900 | train_loss  0.42306 |
+03/08 23:48:21 PM INFO: | Validation      6 | eval_acc  0.55169 |
+03/08 23:48:21 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:21 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:21 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:48:21 PM INFO: Total validation passes without improvement:      5
+03/08 23:48:21 PM INFO: ======================================================================
+03/08 23:48:21 PM INFO: ======================================================================
+03/08 23:48:21 PM INFO: | Validation      7 | iter        0 | train_loss  0.58709 |
+03/08 23:48:21 PM INFO: | Validation      7 | iter      100 | train_loss  0.49993 |
+03/08 23:48:21 PM INFO: | Validation      7 | iter      200 | train_loss  0.43904 |
+03/08 23:48:22 PM INFO: | Validation      7 | iter      300 | train_loss  0.46527 |
+03/08 23:48:22 PM INFO: | Validation      7 | iter      400 | train_loss  0.51384 |
+03/08 23:48:22 PM INFO: | Validation      7 | iter      500 | train_loss  0.35101 |
+03/08 23:48:22 PM INFO: | Validation      7 | iter      600 | train_loss  0.39377 |
+03/08 23:48:22 PM INFO: | Validation      7 | iter      700 | train_loss  0.49022 |
+03/08 23:48:23 PM INFO: | Validation      7 | iter      800 | train_loss  0.44921 |
+03/08 23:48:23 PM INFO: | Validation      7 | iter      900 | train_loss  0.46065 |
+03/08 23:48:23 PM INFO: | Validation      7 | eval_acc  0.55060 |
+03/08 23:48:23 PM INFO: Current LR: 5.000000e-05
+03/08 23:48:23 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:23 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:48:23 PM INFO: Total validation passes without improvement:      6
+03/08 23:48:23 PM INFO: ======================================================================
+03/08 23:48:23 PM INFO: ======================================================================
+03/08 23:48:23 PM INFO: | Validation      8 | iter        0 | train_loss  0.39422 |
+03/08 23:48:23 PM INFO: | Validation      8 | iter      100 | train_loss  0.28937 |
+03/08 23:48:24 PM INFO: | Validation      8 | iter      200 | train_loss  0.41988 |
+03/08 23:48:24 PM INFO: | Validation      8 | iter      300 | train_loss  0.53541 |
+03/08 23:48:24 PM INFO: | Validation      8 | iter      400 | train_loss  0.35551 |
+03/08 23:48:24 PM INFO: | Validation      8 | iter      500 | train_loss  0.30302 |
+03/08 23:48:24 PM INFO: | Validation      8 | iter      600 | train_loss  0.32174 |
+03/08 23:48:25 PM INFO: | Validation      8 | iter      700 | train_loss  0.52596 |
+03/08 23:48:25 PM INFO: | Validation      8 | iter      800 | train_loss  0.37722 |
+03/08 23:48:25 PM INFO: | Validation      8 | iter      900 | train_loss  0.37574 |
+03/08 23:48:25 PM INFO: | Validation      8 | eval_acc  0.55713 |
+03/08 23:48:25 PM INFO: Current LR: 5.000000e-05
+03/08 23:48:25 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:25 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:48:25 PM INFO: Total validation passes without improvement:      7
+03/08 23:48:25 PM INFO: ======================================================================
+03/08 23:48:25 PM INFO: ======================================================================
+03/08 23:48:25 PM INFO: | Validation      9 | iter        0 | train_loss  0.36472 |
+03/08 23:48:25 PM INFO: | Validation      9 | iter      100 | train_loss  0.37742 |
+03/08 23:48:26 PM INFO: | Validation      9 | iter      200 | train_loss  0.36381 |
+03/08 23:48:26 PM INFO: | Validation      9 | iter      300 | train_loss  0.39218 |
+03/08 23:48:26 PM INFO: | Validation      9 | iter      400 | train_loss  0.31426 |
+03/08 23:48:26 PM INFO: | Validation      9 | iter      500 | train_loss  0.36823 |
+03/08 23:48:26 PM INFO: | Validation      9 | iter      600 | train_loss  0.43994 |
+03/08 23:48:27 PM INFO: | Validation      9 | iter      700 | train_loss  0.34999 |
+03/08 23:48:27 PM INFO: | Validation      9 | iter      800 | train_loss  0.29925 |
+03/08 23:48:27 PM INFO: | Validation      9 | iter      900 | train_loss  0.38460 |
+03/08 23:48:27 PM INFO: | Validation      9 | eval_acc  0.55169 |
+03/08 23:48:27 PM INFO: Current LR: 5.000000e-05
+03/08 23:48:27 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:27 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:48:27 PM INFO: Total validation passes without improvement:      8
+03/08 23:48:27 PM INFO: ======================================================================
+03/08 23:48:27 PM INFO: ======================================================================
+03/08 23:48:27 PM INFO: | Validation     10 | iter        0 | train_loss  0.46433 |
+03/08 23:48:28 PM INFO: | Validation     10 | iter      100 | train_loss  0.28333 |
+03/08 23:48:28 PM INFO: | Validation     10 | iter      200 | train_loss  0.47842 |
+03/08 23:48:28 PM INFO: | Validation     10 | iter      300 | train_loss  0.34874 |
+03/08 23:48:28 PM INFO: | Validation     10 | iter      400 | train_loss  0.35574 |
+03/08 23:48:28 PM INFO: | Validation     10 | iter      500 | train_loss  0.27318 |
+03/08 23:48:29 PM INFO: | Validation     10 | iter      600 | train_loss  0.35824 |
+03/08 23:48:29 PM INFO: | Validation     10 | iter      700 | train_loss  0.31010 |
+03/08 23:48:29 PM INFO: | Validation     10 | iter      800 | train_loss  0.28345 |
+03/08 23:48:29 PM INFO: | Validation     10 | iter      900 | train_loss  0.31830 |
+03/08 23:48:30 PM INFO: | Validation     10 | eval_acc  0.54733 |
+03/08 23:48:30 PM INFO: Current LR: 5.000000e-05
+03/08 23:48:30 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:30 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:48:30 PM INFO: Total validation passes without improvement:      9
+03/08 23:48:30 PM INFO: ======================================================================
+03/08 23:48:30 PM INFO: ======================================================================
+03/08 23:48:30 PM INFO: | Validation     11 | iter        0 | train_loss  0.37293 |
+03/08 23:48:30 PM INFO: | Validation     11 | iter      100 | train_loss  0.36505 |
+03/08 23:48:30 PM INFO: | Validation     11 | iter      200 | train_loss  0.35618 |
+03/08 23:48:30 PM INFO: | Validation     11 | iter      300 | train_loss  0.25770 |
+03/08 23:48:30 PM INFO: | Validation     11 | iter      400 | train_loss  0.31459 |
+03/08 23:48:31 PM INFO: | Validation     11 | iter      500 | train_loss  0.42000 |
+03/08 23:48:31 PM INFO: | Validation     11 | iter      600 | train_loss  0.27076 |
+03/08 23:48:31 PM INFO: | Validation     11 | iter      700 | train_loss  0.32237 |
+03/08 23:48:31 PM INFO: | Validation     11 | iter      800 | train_loss  0.28758 |
+03/08 23:48:31 PM INFO: | Validation     11 | iter      900 | train_loss  0.37404 |
+03/08 23:48:32 PM INFO: | Validation     11 | eval_acc  0.54951 |
+03/08 23:48:32 PM INFO: Current LR: 5.000000e-05
+03/08 23:48:32 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:32 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:48:32 PM INFO: Total validation passes without improvement:     10
+03/08 23:48:32 PM INFO: ======================================================================
+03/08 23:48:32 PM INFO: ======================================================================
+03/08 23:48:32 PM INFO: | Validation     12 | iter        0 | train_loss  0.34796 |
+03/08 23:48:32 PM INFO: | Validation     12 | iter      100 | train_loss  0.35948 |
+03/08 23:48:32 PM INFO: | Validation     12 | iter      200 | train_loss  0.35720 |
+03/08 23:48:32 PM INFO: | Validation     12 | iter      300 | train_loss  0.26963 |
+03/08 23:48:32 PM INFO: | Validation     12 | iter      400 | train_loss  0.29356 |
+03/08 23:48:33 PM INFO: | Validation     12 | iter      500 | train_loss  0.36106 |
+03/08 23:48:33 PM INFO: | Validation     12 | iter      600 | train_loss  0.32750 |
+03/08 23:48:33 PM INFO: | Validation     12 | iter      700 | train_loss  0.34347 |
+03/08 23:48:33 PM INFO: | Validation     12 | iter      800 | train_loss  0.29150 |
+03/08 23:48:33 PM INFO: | Validation     12 | iter      900 | train_loss  0.36136 |
+03/08 23:48:34 PM INFO: | Validation     12 | eval_acc  0.55169 |
+03/08 23:48:34 PM INFO: Current LR: 5.000000e-05
+03/08 23:48:34 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:34 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:48:34 PM INFO: Total validation passes without improvement:     11
+03/08 23:48:34 PM INFO: ======================================================================
+03/08 23:48:34 PM INFO: ======================================================================
+03/08 23:48:34 PM INFO: | Validation     13 | iter        0 | train_loss  0.25225 |
+03/08 23:48:34 PM INFO: | Validation     13 | iter      100 | train_loss  0.25747 |
+03/08 23:48:34 PM INFO: | Validation     13 | iter      200 | train_loss  0.31519 |
+03/08 23:48:34 PM INFO: | Validation     13 | iter      300 | train_loss  0.25198 |
+03/08 23:48:35 PM INFO: | Validation     13 | iter      400 | train_loss  0.24450 |
+03/08 23:48:35 PM INFO: | Validation     13 | iter      500 | train_loss  0.25606 |
+03/08 23:48:35 PM INFO: | Validation     13 | iter      600 | train_loss  0.21379 |
+03/08 23:48:35 PM INFO: | Validation     13 | iter      700 | train_loss  0.25906 |
+03/08 23:48:35 PM INFO: | Validation     13 | iter      800 | train_loss  0.28514 |
+03/08 23:48:36 PM INFO: | Validation     13 | iter      900 | train_loss  0.20640 |
+03/08 23:48:36 PM INFO: | Validation     13 | eval_acc  0.54570 |
+03/08 23:48:36 PM INFO: Current LR: 2.500000e-05
+03/08 23:48:36 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:36 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:48:36 PM INFO: Total validation passes without improvement:     12
+03/08 23:48:36 PM INFO: ======================================================================
+03/08 23:48:36 PM INFO: ======================================================================
+03/08 23:48:36 PM INFO: | Validation     14 | iter        0 | train_loss  0.22473 |
+03/08 23:48:36 PM INFO: | Validation     14 | iter      100 | train_loss  0.21443 |
+03/08 23:48:36 PM INFO: | Validation     14 | iter      200 | train_loss  0.24818 |
+03/08 23:48:36 PM INFO: | Validation     14 | iter      300 | train_loss  0.22797 |
+03/08 23:48:37 PM INFO: | Validation     14 | iter      400 | train_loss  0.31120 |
+03/08 23:48:37 PM INFO: | Validation     14 | iter      500 | train_loss  0.22433 |
+03/08 23:48:37 PM INFO: | Validation     14 | iter      600 | train_loss  0.18560 |
+03/08 23:48:37 PM INFO: | Validation     14 | iter      700 | train_loss  0.27083 |
+03/08 23:48:38 PM INFO: | Validation     14 | iter      800 | train_loss  0.20642 |
+03/08 23:48:38 PM INFO: | Validation     14 | iter      900 | train_loss  0.24020 |
+03/08 23:48:38 PM INFO: | Validation     14 | eval_acc  0.54407 |
+03/08 23:48:38 PM INFO: Current LR: 2.500000e-05
+03/08 23:48:38 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:38 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:48:38 PM INFO: Total validation passes without improvement:     13
+03/08 23:48:38 PM INFO: ======================================================================
+03/08 23:48:38 PM INFO: ======================================================================
+03/08 23:48:38 PM INFO: | Validation     15 | iter        0 | train_loss  0.32460 |
+03/08 23:48:38 PM INFO: | Validation     15 | iter      100 | train_loss  0.30195 |
+03/08 23:48:38 PM INFO: | Validation     15 | iter      200 | train_loss  0.25011 |
+03/08 23:48:39 PM INFO: | Validation     15 | iter      300 | train_loss  0.29532 |
+03/08 23:48:39 PM INFO: | Validation     15 | iter      400 | train_loss  0.25856 |
+03/08 23:48:39 PM INFO: | Validation     15 | iter      500 | train_loss  0.17987 |
+03/08 23:48:39 PM INFO: | Validation     15 | iter      600 | train_loss  0.18948 |
+03/08 23:48:39 PM INFO: | Validation     15 | iter      700 | train_loss  0.21922 |
+03/08 23:48:40 PM INFO: | Validation     15 | iter      800 | train_loss  0.27920 |
+03/08 23:48:40 PM INFO: | Validation     15 | iter      900 | train_loss  0.35209 |
+03/08 23:48:40 PM INFO: | Validation     15 | eval_acc  0.54353 |
+03/08 23:48:40 PM INFO: Current LR: 2.500000e-05
+03/08 23:48:40 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:40 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:48:40 PM INFO: Total validation passes without improvement:     14
+03/08 23:48:40 PM INFO: ======================================================================
+03/08 23:48:40 PM INFO: ======================================================================
+03/08 23:48:40 PM INFO: | Validation     16 | iter        0 | train_loss  0.24223 |
+03/08 23:48:40 PM INFO: | Validation     16 | iter      100 | train_loss  0.25896 |
+03/08 23:48:41 PM INFO: | Validation     16 | iter      200 | train_loss  0.19688 |
+03/08 23:48:41 PM INFO: | Validation     16 | iter      300 | train_loss  0.23369 |
+03/08 23:48:41 PM INFO: | Validation     16 | iter      400 | train_loss  0.26941 |
+03/08 23:48:41 PM INFO: | Validation     16 | iter      500 | train_loss  0.27477 |
+03/08 23:48:41 PM INFO: | Validation     16 | iter      600 | train_loss  0.19235 |
+03/08 23:48:42 PM INFO: | Validation     16 | iter      700 | train_loss  0.17990 |
+03/08 23:48:42 PM INFO: | Validation     16 | iter      800 | train_loss  0.16841 |
+03/08 23:48:42 PM INFO: | Validation     16 | iter      900 | train_loss  0.22537 |
+03/08 23:48:42 PM INFO: | Validation     16 | eval_acc  0.54298 |
+03/08 23:48:42 PM INFO: Current LR: 2.500000e-05
+03/08 23:48:42 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:42 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:48:42 PM INFO: Total validation passes without improvement:     15
+03/08 23:48:42 PM INFO: ======================================================================
+03/08 23:48:42 PM INFO: ======================================================================
+03/08 23:48:42 PM INFO: | Validation     17 | iter        0 | train_loss  0.33680 |
+03/08 23:48:43 PM INFO: | Validation     17 | iter      100 | train_loss  0.16834 |
+03/08 23:48:43 PM INFO: | Validation     17 | iter      200 | train_loss  0.25817 |
+03/08 23:48:43 PM INFO: | Validation     17 | iter      300 | train_loss  0.15311 |
+03/08 23:48:43 PM INFO: | Validation     17 | iter      400 | train_loss  0.27183 |
+03/08 23:48:43 PM INFO: | Validation     17 | iter      500 | train_loss  0.17853 |
+03/08 23:48:44 PM INFO: | Validation     17 | iter      600 | train_loss  0.25680 |
+03/08 23:48:44 PM INFO: | Validation     17 | iter      700 | train_loss  0.24562 |
+03/08 23:48:44 PM INFO: | Validation     17 | iter      800 | train_loss  0.19385 |
+03/08 23:48:44 PM INFO: | Validation     17 | iter      900 | train_loss  0.21913 |
+03/08 23:48:45 PM INFO: | Validation     17 | eval_acc  0.54461 |
+03/08 23:48:45 PM INFO: Current LR: 2.500000e-05
+03/08 23:48:45 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:45 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:48:45 PM INFO: Total validation passes without improvement:     16
+03/08 23:48:45 PM INFO: ======================================================================
+03/08 23:48:45 PM INFO: ======================================================================
+03/08 23:48:45 PM INFO: | Validation     18 | iter        0 | train_loss  0.15358 |
+03/08 23:48:45 PM INFO: | Validation     18 | iter      100 | train_loss  0.27752 |
+03/08 23:48:45 PM INFO: | Validation     18 | iter      200 | train_loss  0.21327 |
+03/08 23:48:45 PM INFO: | Validation     18 | iter      300 | train_loss  0.29732 |
+03/08 23:48:45 PM INFO: | Validation     18 | iter      400 | train_loss  0.19270 |
+03/08 23:48:46 PM INFO: | Validation     18 | iter      500 | train_loss  0.11991 |
+03/08 23:48:46 PM INFO: | Validation     18 | iter      600 | train_loss  0.20429 |
+03/08 23:48:46 PM INFO: | Validation     18 | iter      700 | train_loss  0.24921 |
+03/08 23:48:46 PM INFO: | Validation     18 | iter      800 | train_loss  0.20964 |
+03/08 23:48:46 PM INFO: | Validation     18 | iter      900 | train_loss  0.26330 |
+03/08 23:48:47 PM INFO: | Validation     18 | eval_acc  0.54026 |
+03/08 23:48:47 PM INFO: Current LR: 2.500000e-05
+03/08 23:48:47 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:47 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:48:47 PM INFO: Total validation passes without improvement:     17
+03/08 23:48:47 PM INFO: ======================================================================
+03/08 23:48:47 PM INFO: ======================================================================
+03/08 23:48:47 PM INFO: | Validation     19 | iter        0 | train_loss  0.14264 |
+03/08 23:48:47 PM INFO: | Validation     19 | iter      100 | train_loss  0.17602 |
+03/08 23:48:47 PM INFO: | Validation     19 | iter      200 | train_loss  0.19152 |
+03/08 23:48:47 PM INFO: | Validation     19 | iter      300 | train_loss  0.21015 |
+03/08 23:48:47 PM INFO: | Validation     19 | iter      400 | train_loss  0.22044 |
+03/08 23:48:48 PM INFO: | Validation     19 | iter      500 | train_loss  0.17747 |
+03/08 23:48:48 PM INFO: | Validation     19 | iter      600 | train_loss  0.20594 |
+03/08 23:48:48 PM INFO: | Validation     19 | iter      700 | train_loss  0.18285 |
+03/08 23:48:48 PM INFO: | Validation     19 | iter      800 | train_loss  0.15728 |
+03/08 23:48:49 PM INFO: | Validation     19 | iter      900 | train_loss  0.13605 |
+03/08 23:48:49 PM INFO: | Validation     19 | eval_acc  0.53591 |
+03/08 23:48:49 PM INFO: Current LR: 1.250000e-05
+03/08 23:48:49 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:49 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:48:49 PM INFO: Total validation passes without improvement:     18
+03/08 23:48:49 PM INFO: ======================================================================
+03/08 23:48:49 PM INFO: ======================================================================
+03/08 23:48:49 PM INFO: | Validation     20 | iter        0 | train_loss  0.15206 |
+03/08 23:48:49 PM INFO: | Validation     20 | iter      100 | train_loss  0.16657 |
+03/08 23:48:49 PM INFO: | Validation     20 | iter      200 | train_loss  0.13184 |
+03/08 23:48:49 PM INFO: | Validation     20 | iter      300 | train_loss  0.11469 |
+03/08 23:48:50 PM INFO: | Validation     20 | iter      400 | train_loss  0.17449 |
+03/08 23:48:50 PM INFO: | Validation     20 | iter      500 | train_loss  0.21416 |
+03/08 23:48:50 PM INFO: | Validation     20 | iter      600 | train_loss  0.18529 |
+03/08 23:48:50 PM INFO: | Validation     20 | iter      700 | train_loss  0.14105 |
+03/08 23:48:51 PM INFO: | Validation     20 | iter      800 | train_loss  0.15095 |
+03/08 23:48:51 PM INFO: | Validation     20 | iter      900 | train_loss  0.16021 |
+03/08 23:48:51 PM INFO: | Validation     20 | eval_acc  0.53591 |
+03/08 23:48:51 PM INFO: Current LR: 1.250000e-05
+03/08 23:48:51 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:51 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:48:51 PM INFO: Total validation passes without improvement:     19
+03/08 23:48:51 PM INFO: ======================================================================
+03/08 23:48:51 PM INFO: ======================================================================
+03/08 23:48:51 PM INFO: | Validation     21 | iter        0 | train_loss  0.18019 |
+03/08 23:48:51 PM INFO: | Validation     21 | iter      100 | train_loss  0.16435 |
+03/08 23:48:52 PM INFO: | Validation     21 | iter      200 | train_loss  0.17735 |
+03/08 23:48:52 PM INFO: | Validation     21 | iter      300 | train_loss  0.22414 |
+03/08 23:48:52 PM INFO: | Validation     21 | iter      400 | train_loss  0.15612 |
+03/08 23:48:52 PM INFO: | Validation     21 | iter      500 | train_loss  0.20533 |
+03/08 23:48:52 PM INFO: | Validation     21 | iter      600 | train_loss  0.17245 |
+03/08 23:48:53 PM INFO: | Validation     21 | iter      700 | train_loss  0.20163 |
+03/08 23:48:53 PM INFO: | Validation     21 | iter      800 | train_loss  0.19116 |
+03/08 23:48:53 PM INFO: | Validation     21 | iter      900 | train_loss  0.10942 |
+03/08 23:48:53 PM INFO: | Validation     21 | eval_acc  0.54026 |
+03/08 23:48:53 PM INFO: Current LR: 1.250000e-05
+03/08 23:48:53 PM INFO: Best accuracy  0.56964 at Step 1
+03/08 23:48:53 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:48:53 PM INFO: Total validation passes without improvement:     20
+03/08 23:48:53 PM INFO: ======================================================================
+03/08 23:48:53 PM INFO: Stopped training after 22 validation checks
+03/08 23:48:53 PM INFO: Trained for 22000 steps (batches) or 87.377436 epochs
+03/08 23:48:53 PM INFO: Best model found with accuracy  0.56964 at Validation 1
+03/08 23:48:53 PM INFO: Output predictions to ./outputs/piqa/probing_VideoBERT_topmask_text_mlp_R5_S1000_B32_LR0.0001
+03/08 23:48:53 PM INFO: ######################################################################
+03/08 23:48:53 PM INFO: ######################################################################
+03/08 23:48:53 PM INFO: ======================================================================
+03/08 23:48:53 PM INFO: | Validation      0 | iter        0 | train_loss  0.70695 |
+03/08 23:48:54 PM INFO: | Validation      0 | iter      100 | train_loss  0.70319 |
+03/08 23:48:54 PM INFO: | Validation      0 | iter      200 | train_loss  0.71699 |
+03/08 23:48:54 PM INFO: | Validation      0 | iter      300 | train_loss  0.76100 |
+03/08 23:48:54 PM INFO: | Validation      0 | iter      400 | train_loss  0.68835 |
+03/08 23:48:54 PM INFO: | Validation      0 | iter      500 | train_loss  0.67204 |
+03/08 23:48:55 PM INFO: | Validation      0 | iter      600 | train_loss  0.65218 |
+03/08 23:48:55 PM INFO: | Validation      0 | iter      700 | train_loss  0.68724 |
+03/08 23:48:55 PM INFO: | Validation      0 | iter      800 | train_loss  0.71714 |
+03/08 23:48:55 PM INFO: | Validation      0 | iter      900 | train_loss  0.66465 |
+03/08 23:48:56 PM INFO: | Validation      0 | eval_acc  0.55930 |
+03/08 23:48:56 PM INFO: **********************************************************************
+03/08 23:48:56 PM INFO: Best model found with accuracy  0.55930
+03/08 23:48:56 PM INFO: **********************************************************************
+03/08 23:48:56 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:56 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:48:56 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:48:56 PM INFO: Total validation passes without improvement:      0
+03/08 23:48:56 PM INFO: ======================================================================
+03/08 23:48:56 PM INFO: ======================================================================
+03/08 23:48:56 PM INFO: | Validation      1 | iter        0 | train_loss  0.67880 |
+03/08 23:48:56 PM INFO: | Validation      1 | iter      100 | train_loss  0.62176 |
+03/08 23:48:56 PM INFO: | Validation      1 | iter      200 | train_loss  0.56944 |
+03/08 23:48:56 PM INFO: | Validation      1 | iter      300 | train_loss  0.64486 |
+03/08 23:48:56 PM INFO: | Validation      1 | iter      400 | train_loss  0.62522 |
+03/08 23:48:57 PM INFO: | Validation      1 | iter      500 | train_loss  0.58718 |
+03/08 23:48:57 PM INFO: | Validation      1 | iter      600 | train_loss  0.64710 |
+03/08 23:48:57 PM INFO: | Validation      1 | iter      700 | train_loss  0.65282 |
+03/08 23:48:57 PM INFO: | Validation      1 | iter      800 | train_loss  0.59557 |
+03/08 23:48:57 PM INFO: | Validation      1 | iter      900 | train_loss  0.64577 |
+03/08 23:48:58 PM INFO: | Validation      1 | eval_acc  0.55332 |
+03/08 23:48:58 PM INFO: Current LR: 1.000000e-04
+03/08 23:48:58 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:48:58 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:48:58 PM INFO: Total validation passes without improvement:      1
+03/08 23:48:58 PM INFO: ======================================================================
+03/08 23:48:58 PM INFO: ======================================================================
+03/08 23:48:58 PM INFO: | Validation      2 | iter        0 | train_loss  0.68427 |
+03/08 23:48:58 PM INFO: | Validation      2 | iter      100 | train_loss  0.62508 |
+03/08 23:48:58 PM INFO: | Validation      2 | iter      200 | train_loss  0.60294 |
+03/08 23:48:58 PM INFO: | Validation      2 | iter      300 | train_loss  0.64001 |
+03/08 23:48:58 PM INFO: | Validation      2 | iter      400 | train_loss  0.58103 |
+03/08 23:48:59 PM INFO: | Validation      2 | iter      500 | train_loss  0.59824 |
+03/08 23:48:59 PM INFO: | Validation      2 | iter      600 | train_loss  0.57480 |
+03/08 23:48:59 PM INFO: | Validation      2 | iter      700 | train_loss  0.59445 |
+03/08 23:48:59 PM INFO: | Validation      2 | iter      800 | train_loss  0.58883 |
+03/08 23:49:00 PM INFO: | Validation      2 | iter      900 | train_loss  0.62798 |
+03/08 23:49:00 PM INFO: | Validation      2 | eval_acc  0.55930 |
+03/08 23:49:00 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:00 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:00 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:49:00 PM INFO: Total validation passes without improvement:      2
+03/08 23:49:00 PM INFO: ======================================================================
+03/08 23:49:00 PM INFO: ======================================================================
+03/08 23:49:00 PM INFO: | Validation      3 | iter        0 | train_loss  0.57513 |
+03/08 23:49:00 PM INFO: | Validation      3 | iter      100 | train_loss  0.59546 |
+03/08 23:49:00 PM INFO: | Validation      3 | iter      200 | train_loss  0.46439 |
+03/08 23:49:00 PM INFO: | Validation      3 | iter      300 | train_loss  0.43944 |
+03/08 23:49:01 PM INFO: | Validation      3 | iter      400 | train_loss  0.65890 |
+03/08 23:49:01 PM INFO: | Validation      3 | iter      500 | train_loss  0.47611 |
+03/08 23:49:01 PM INFO: | Validation      3 | iter      600 | train_loss  0.62404 |
+03/08 23:49:01 PM INFO: | Validation      3 | iter      700 | train_loss  0.67229 |
+03/08 23:49:02 PM INFO: | Validation      3 | iter      800 | train_loss  0.52183 |
+03/08 23:49:02 PM INFO: | Validation      3 | iter      900 | train_loss  0.60760 |
+03/08 23:49:02 PM INFO: | Validation      3 | eval_acc  0.54897 |
+03/08 23:49:02 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:02 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:02 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:49:02 PM INFO: Total validation passes without improvement:      3
+03/08 23:49:02 PM INFO: ======================================================================
+03/08 23:49:02 PM INFO: ======================================================================
+03/08 23:49:02 PM INFO: | Validation      4 | iter        0 | train_loss  0.52498 |
+03/08 23:49:02 PM INFO: | Validation      4 | iter      100 | train_loss  0.61646 |
+03/08 23:49:02 PM INFO: | Validation      4 | iter      200 | train_loss  0.53293 |
+03/08 23:49:03 PM INFO: | Validation      4 | iter      300 | train_loss  0.63757 |
+03/08 23:49:03 PM INFO: | Validation      4 | iter      400 | train_loss  0.53200 |
+03/08 23:49:03 PM INFO: | Validation      4 | iter      500 | train_loss  0.50038 |
+03/08 23:49:03 PM INFO: | Validation      4 | iter      600 | train_loss  0.51777 |
+03/08 23:49:03 PM INFO: | Validation      4 | iter      700 | train_loss  0.58939 |
+03/08 23:49:04 PM INFO: | Validation      4 | iter      800 | train_loss  0.53004 |
+03/08 23:49:04 PM INFO: | Validation      4 | iter      900 | train_loss  0.49156 |
+03/08 23:49:04 PM INFO: | Validation      4 | eval_acc  0.55658 |
+03/08 23:49:04 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:04 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:04 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:49:04 PM INFO: Total validation passes without improvement:      4
+03/08 23:49:04 PM INFO: ======================================================================
+03/08 23:49:04 PM INFO: ======================================================================
+03/08 23:49:04 PM INFO: | Validation      5 | iter        0 | train_loss  0.61380 |
+03/08 23:49:04 PM INFO: | Validation      5 | iter      100 | train_loss  0.52170 |
+03/08 23:49:05 PM INFO: | Validation      5 | iter      200 | train_loss  0.63054 |
+03/08 23:49:05 PM INFO: | Validation      5 | iter      300 | train_loss  0.42024 |
+03/08 23:49:05 PM INFO: | Validation      5 | iter      400 | train_loss  0.64187 |
+03/08 23:49:05 PM INFO: | Validation      5 | iter      500 | train_loss  0.56454 |
+03/08 23:49:05 PM INFO: | Validation      5 | iter      600 | train_loss  0.46083 |
+03/08 23:49:06 PM INFO: | Validation      5 | iter      700 | train_loss  0.57918 |
+03/08 23:49:06 PM INFO: | Validation      5 | iter      800 | train_loss  0.52258 |
+03/08 23:49:06 PM INFO: | Validation      5 | iter      900 | train_loss  0.43356 |
+03/08 23:49:06 PM INFO: | Validation      5 | eval_acc  0.54298 |
+03/08 23:49:06 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:06 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:06 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:49:06 PM INFO: Total validation passes without improvement:      5
+03/08 23:49:06 PM INFO: ======================================================================
+03/08 23:49:06 PM INFO: ======================================================================
+03/08 23:49:06 PM INFO: | Validation      6 | iter        0 | train_loss  0.61662 |
+03/08 23:49:06 PM INFO: | Validation      6 | iter      100 | train_loss  0.40698 |
+03/08 23:49:07 PM INFO: | Validation      6 | iter      200 | train_loss  0.58255 |
+03/08 23:49:07 PM INFO: | Validation      6 | iter      300 | train_loss  0.45125 |
+03/08 23:49:07 PM INFO: | Validation      6 | iter      400 | train_loss  0.39691 |
+03/08 23:49:07 PM INFO: | Validation      6 | iter      500 | train_loss  0.42147 |
+03/08 23:49:08 PM INFO: | Validation      6 | iter      600 | train_loss  0.38693 |
+03/08 23:49:08 PM INFO: | Validation      6 | iter      700 | train_loss  0.63331 |
+03/08 23:49:08 PM INFO: | Validation      6 | iter      800 | train_loss  0.33487 |
+03/08 23:49:08 PM INFO: | Validation      6 | iter      900 | train_loss  0.50596 |
+03/08 23:49:08 PM INFO: | Validation      6 | eval_acc  0.54298 |
+03/08 23:49:08 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:08 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:08 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:49:08 PM INFO: Total validation passes without improvement:      6
+03/08 23:49:08 PM INFO: ======================================================================
+03/08 23:49:08 PM INFO: ======================================================================
+03/08 23:49:08 PM INFO: | Validation      7 | iter        0 | train_loss  0.48396 |
+03/08 23:49:09 PM INFO: | Validation      7 | iter      100 | train_loss  0.45106 |
+03/08 23:49:09 PM INFO: | Validation      7 | iter      200 | train_loss  0.41079 |
+03/08 23:49:09 PM INFO: | Validation      7 | iter      300 | train_loss  0.38804 |
+03/08 23:49:09 PM INFO: | Validation      7 | iter      400 | train_loss  0.32671 |
+03/08 23:49:09 PM INFO: | Validation      7 | iter      500 | train_loss  0.38004 |
+03/08 23:49:10 PM INFO: | Validation      7 | iter      600 | train_loss  0.38920 |
+03/08 23:49:10 PM INFO: | Validation      7 | iter      700 | train_loss  0.34047 |
+03/08 23:49:10 PM INFO: | Validation      7 | iter      800 | train_loss  0.38145 |
+03/08 23:49:10 PM INFO: | Validation      7 | iter      900 | train_loss  0.37781 |
+03/08 23:49:11 PM INFO: | Validation      7 | eval_acc  0.53645 |
+03/08 23:49:11 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:11 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:11 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:49:11 PM INFO: Total validation passes without improvement:      7
+03/08 23:49:11 PM INFO: ======================================================================
+03/08 23:49:11 PM INFO: ======================================================================
+03/08 23:49:11 PM INFO: | Validation      8 | iter        0 | train_loss  0.37293 |
+03/08 23:49:11 PM INFO: | Validation      8 | iter      100 | train_loss  0.44009 |
+03/08 23:49:11 PM INFO: | Validation      8 | iter      200 | train_loss  0.39707 |
+03/08 23:49:11 PM INFO: | Validation      8 | iter      300 | train_loss  0.22284 |
+03/08 23:49:11 PM INFO: | Validation      8 | iter      400 | train_loss  0.27640 |
+03/08 23:49:12 PM INFO: | Validation      8 | iter      500 | train_loss  0.38771 |
+03/08 23:49:12 PM INFO: | Validation      8 | iter      600 | train_loss  0.41015 |
+03/08 23:49:12 PM INFO: | Validation      8 | iter      700 | train_loss  0.37142 |
+03/08 23:49:12 PM INFO: | Validation      8 | iter      800 | train_loss  0.32559 |
+03/08 23:49:13 PM INFO: | Validation      8 | iter      900 | train_loss  0.30153 |
+03/08 23:49:13 PM INFO: | Validation      8 | eval_acc  0.53700 |
+03/08 23:49:13 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:13 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:13 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:49:13 PM INFO: Total validation passes without improvement:      8
+03/08 23:49:13 PM INFO: ======================================================================
+03/08 23:49:13 PM INFO: ======================================================================
+03/08 23:49:13 PM INFO: | Validation      9 | iter        0 | train_loss  0.43383 |
+03/08 23:49:13 PM INFO: | Validation      9 | iter      100 | train_loss  0.40261 |
+03/08 23:49:13 PM INFO: | Validation      9 | iter      200 | train_loss  0.32159 |
+03/08 23:49:13 PM INFO: | Validation      9 | iter      300 | train_loss  0.38639 |
+03/08 23:49:14 PM INFO: | Validation      9 | iter      400 | train_loss  0.27872 |
+03/08 23:49:14 PM INFO: | Validation      9 | iter      500 | train_loss  0.40749 |
+03/08 23:49:14 PM INFO: | Validation      9 | iter      600 | train_loss  0.31622 |
+03/08 23:49:14 PM INFO: | Validation      9 | iter      700 | train_loss  0.47728 |
+03/08 23:49:15 PM INFO: | Validation      9 | iter      800 | train_loss  0.29919 |
+03/08 23:49:15 PM INFO: | Validation      9 | iter      900 | train_loss  0.31822 |
+03/08 23:49:15 PM INFO: | Validation      9 | eval_acc  0.54244 |
+03/08 23:49:15 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:15 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:15 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:49:15 PM INFO: Total validation passes without improvement:      9
+03/08 23:49:15 PM INFO: ======================================================================
+03/08 23:49:15 PM INFO: ======================================================================
+03/08 23:49:15 PM INFO: | Validation     10 | iter        0 | train_loss  0.41175 |
+03/08 23:49:15 PM INFO: | Validation     10 | iter      100 | train_loss  0.42512 |
+03/08 23:49:15 PM INFO: | Validation     10 | iter      200 | train_loss  0.32602 |
+03/08 23:49:16 PM INFO: | Validation     10 | iter      300 | train_loss  0.36971 |
+03/08 23:49:16 PM INFO: | Validation     10 | iter      400 | train_loss  0.32903 |
+03/08 23:49:16 PM INFO: | Validation     10 | iter      500 | train_loss  0.37542 |
+03/08 23:49:16 PM INFO: | Validation     10 | iter      600 | train_loss  0.40815 |
+03/08 23:49:16 PM INFO: | Validation     10 | iter      700 | train_loss  0.31267 |
+03/08 23:49:17 PM INFO: | Validation     10 | iter      800 | train_loss  0.29309 |
+03/08 23:49:17 PM INFO: | Validation     10 | iter      900 | train_loss  0.34437 |
+03/08 23:49:17 PM INFO: | Validation     10 | eval_acc  0.53917 |
+03/08 23:49:17 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:17 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:17 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:49:17 PM INFO: Total validation passes without improvement:     10
+03/08 23:49:17 PM INFO: ======================================================================
+03/08 23:49:17 PM INFO: ======================================================================
+03/08 23:49:17 PM INFO: | Validation     11 | iter        0 | train_loss  0.27796 |
+03/08 23:49:17 PM INFO: | Validation     11 | iter      100 | train_loss  0.26501 |
+03/08 23:49:18 PM INFO: | Validation     11 | iter      200 | train_loss  0.21711 |
+03/08 23:49:18 PM INFO: | Validation     11 | iter      300 | train_loss  0.32450 |
+03/08 23:49:18 PM INFO: | Validation     11 | iter      400 | train_loss  0.27689 |
+03/08 23:49:18 PM INFO: | Validation     11 | iter      500 | train_loss  0.34170 |
+03/08 23:49:18 PM INFO: | Validation     11 | iter      600 | train_loss  0.31438 |
+03/08 23:49:19 PM INFO: | Validation     11 | iter      700 | train_loss  0.46237 |
+03/08 23:49:19 PM INFO: | Validation     11 | iter      800 | train_loss  0.32837 |
+03/08 23:49:19 PM INFO: | Validation     11 | iter      900 | train_loss  0.37757 |
+03/08 23:49:19 PM INFO: | Validation     11 | eval_acc  0.53645 |
+03/08 23:49:19 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:19 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:19 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:49:19 PM INFO: Total validation passes without improvement:     11
+03/08 23:49:19 PM INFO: ======================================================================
+03/08 23:49:19 PM INFO: ======================================================================
+03/08 23:49:19 PM INFO: | Validation     12 | iter        0 | train_loss  0.26077 |
+03/08 23:49:20 PM INFO: | Validation     12 | iter      100 | train_loss  0.27725 |
+03/08 23:49:20 PM INFO: | Validation     12 | iter      200 | train_loss  0.28404 |
+03/08 23:49:20 PM INFO: | Validation     12 | iter      300 | train_loss  0.27059 |
+03/08 23:49:20 PM INFO: | Validation     12 | iter      400 | train_loss  0.26202 |
+03/08 23:49:20 PM INFO: | Validation     12 | iter      500 | train_loss  0.34976 |
+03/08 23:49:21 PM INFO: | Validation     12 | iter      600 | train_loss  0.15562 |
+03/08 23:49:21 PM INFO: | Validation     12 | iter      700 | train_loss  0.28710 |
+03/08 23:49:21 PM INFO: | Validation     12 | iter      800 | train_loss  0.22871 |
+03/08 23:49:21 PM INFO: | Validation     12 | iter      900 | train_loss  0.25068 |
+03/08 23:49:22 PM INFO: | Validation     12 | eval_acc  0.53645 |
+03/08 23:49:22 PM INFO: Current LR: 2.500000e-05
+03/08 23:49:22 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:22 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:49:22 PM INFO: Total validation passes without improvement:     12
+03/08 23:49:22 PM INFO: ======================================================================
+03/08 23:49:22 PM INFO: ======================================================================
+03/08 23:49:22 PM INFO: | Validation     13 | iter        0 | train_loss  0.24168 |
+03/08 23:49:22 PM INFO: | Validation     13 | iter      100 | train_loss  0.23130 |
+03/08 23:49:22 PM INFO: | Validation     13 | iter      200 | train_loss  0.31849 |
+03/08 23:49:22 PM INFO: | Validation     13 | iter      300 | train_loss  0.24837 |
+03/08 23:49:22 PM INFO: | Validation     13 | iter      400 | train_loss  0.27665 |
+03/08 23:49:23 PM INFO: | Validation     13 | iter      500 | train_loss  0.29887 |
+03/08 23:49:23 PM INFO: | Validation     13 | iter      600 | train_loss  0.17356 |
+03/08 23:49:23 PM INFO: | Validation     13 | iter      700 | train_loss  0.21486 |
+03/08 23:49:23 PM INFO: | Validation     13 | iter      800 | train_loss  0.30093 |
+03/08 23:49:24 PM INFO: | Validation     13 | iter      900 | train_loss  0.20545 |
+03/08 23:49:24 PM INFO: | Validation     13 | eval_acc  0.53319 |
+03/08 23:49:24 PM INFO: Current LR: 2.500000e-05
+03/08 23:49:24 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:24 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:49:24 PM INFO: Total validation passes without improvement:     13
+03/08 23:49:24 PM INFO: ======================================================================
+03/08 23:49:24 PM INFO: ======================================================================
+03/08 23:49:24 PM INFO: | Validation     14 | iter        0 | train_loss  0.19863 |
+03/08 23:49:24 PM INFO: | Validation     14 | iter      100 | train_loss  0.18871 |
+03/08 23:49:24 PM INFO: | Validation     14 | iter      200 | train_loss  0.21826 |
+03/08 23:49:24 PM INFO: | Validation     14 | iter      300 | train_loss  0.15041 |
+03/08 23:49:25 PM INFO: | Validation     14 | iter      400 | train_loss  0.19039 |
+03/08 23:49:25 PM INFO: | Validation     14 | iter      500 | train_loss  0.22546 |
+03/08 23:49:25 PM INFO: | Validation     14 | iter      600 | train_loss  0.19579 |
+03/08 23:49:25 PM INFO: | Validation     14 | iter      700 | train_loss  0.19622 |
+03/08 23:49:25 PM INFO: | Validation     14 | iter      800 | train_loss  0.18256 |
+03/08 23:49:26 PM INFO: | Validation     14 | iter      900 | train_loss  0.20503 |
+03/08 23:49:26 PM INFO: | Validation     14 | eval_acc  0.53591 |
+03/08 23:49:26 PM INFO: Current LR: 2.500000e-05
+03/08 23:49:26 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:26 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:49:26 PM INFO: Total validation passes without improvement:     14
+03/08 23:49:26 PM INFO: ======================================================================
+03/08 23:49:26 PM INFO: ======================================================================
+03/08 23:49:26 PM INFO: | Validation     15 | iter        0 | train_loss  0.19679 |
+03/08 23:49:26 PM INFO: | Validation     15 | iter      100 | train_loss  0.21239 |
+03/08 23:49:26 PM INFO: | Validation     15 | iter      200 | train_loss  0.16450 |
+03/08 23:49:27 PM INFO: | Validation     15 | iter      300 | train_loss  0.13804 |
+03/08 23:49:27 PM INFO: | Validation     15 | iter      400 | train_loss  0.23678 |
+03/08 23:49:27 PM INFO: | Validation     15 | iter      500 | train_loss  0.17758 |
+03/08 23:49:27 PM INFO: | Validation     15 | iter      600 | train_loss  0.13729 |
+03/08 23:49:27 PM INFO: | Validation     15 | iter      700 | train_loss  0.09934 |
+03/08 23:49:28 PM INFO: | Validation     15 | iter      800 | train_loss  0.21097 |
+03/08 23:49:28 PM INFO: | Validation     15 | iter      900 | train_loss  0.15997 |
+03/08 23:49:28 PM INFO: | Validation     15 | eval_acc  0.53808 |
+03/08 23:49:28 PM INFO: Current LR: 2.500000e-05
+03/08 23:49:28 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:28 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:49:28 PM INFO: Total validation passes without improvement:     15
+03/08 23:49:28 PM INFO: ======================================================================
+03/08 23:49:28 PM INFO: ======================================================================
+03/08 23:49:28 PM INFO: | Validation     16 | iter        0 | train_loss  0.17883 |
+03/08 23:49:28 PM INFO: | Validation     16 | iter      100 | train_loss  0.20450 |
+03/08 23:49:29 PM INFO: | Validation     16 | iter      200 | train_loss  0.10848 |
+03/08 23:49:29 PM INFO: | Validation     16 | iter      300 | train_loss  0.14339 |
+03/08 23:49:29 PM INFO: | Validation     16 | iter      400 | train_loss  0.17352 |
+03/08 23:49:29 PM INFO: | Validation     16 | iter      500 | train_loss  0.23808 |
+03/08 23:49:29 PM INFO: | Validation     16 | iter      600 | train_loss  0.23304 |
+03/08 23:49:30 PM INFO: | Validation     16 | iter      700 | train_loss  0.18616 |
+03/08 23:49:30 PM INFO: | Validation     16 | iter      800 | train_loss  0.15814 |
+03/08 23:49:30 PM INFO: | Validation     16 | iter      900 | train_loss  0.13707 |
+03/08 23:49:30 PM INFO: | Validation     16 | eval_acc  0.53972 |
+03/08 23:49:30 PM INFO: Current LR: 2.500000e-05
+03/08 23:49:30 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:30 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:49:30 PM INFO: Total validation passes without improvement:     16
+03/08 23:49:30 PM INFO: ======================================================================
+03/08 23:49:30 PM INFO: ======================================================================
+03/08 23:49:30 PM INFO: | Validation     17 | iter        0 | train_loss  0.17919 |
+03/08 23:49:31 PM INFO: | Validation     17 | iter      100 | train_loss  0.14191 |
+03/08 23:49:31 PM INFO: | Validation     17 | iter      200 | train_loss  0.15874 |
+03/08 23:49:31 PM INFO: | Validation     17 | iter      300 | train_loss  0.12552 |
+03/08 23:49:31 PM INFO: | Validation     17 | iter      400 | train_loss  0.20062 |
+03/08 23:49:31 PM INFO: | Validation     17 | iter      500 | train_loss  0.16825 |
+03/08 23:49:32 PM INFO: | Validation     17 | iter      600 | train_loss  0.10543 |
+03/08 23:49:32 PM INFO: | Validation     17 | iter      700 | train_loss  0.21592 |
+03/08 23:49:32 PM INFO: | Validation     17 | iter      800 | train_loss  0.17737 |
+03/08 23:49:32 PM INFO: | Validation     17 | iter      900 | train_loss  0.12473 |
+03/08 23:49:32 PM INFO: | Validation     17 | eval_acc  0.53482 |
+03/08 23:49:32 PM INFO: Current LR: 2.500000e-05
+03/08 23:49:32 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:32 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:49:32 PM INFO: Total validation passes without improvement:     17
+03/08 23:49:32 PM INFO: ======================================================================
+03/08 23:49:32 PM INFO: ======================================================================
+03/08 23:49:32 PM INFO: | Validation     18 | iter        0 | train_loss  0.14814 |
+03/08 23:49:33 PM INFO: | Validation     18 | iter      100 | train_loss  0.15855 |
+03/08 23:49:33 PM INFO: | Validation     18 | iter      200 | train_loss  0.14151 |
+03/08 23:49:33 PM INFO: | Validation     18 | iter      300 | train_loss  0.11384 |
+03/08 23:49:33 PM INFO: | Validation     18 | iter      400 | train_loss  0.12279 |
+03/08 23:49:34 PM INFO: | Validation     18 | iter      500 | train_loss  0.09917 |
+03/08 23:49:34 PM INFO: | Validation     18 | iter      600 | train_loss  0.15898 |
+03/08 23:49:34 PM INFO: | Validation     18 | iter      700 | train_loss  0.21843 |
+03/08 23:49:34 PM INFO: | Validation     18 | iter      800 | train_loss  0.14584 |
+03/08 23:49:34 PM INFO: | Validation     18 | iter      900 | train_loss  0.22097 |
+03/08 23:49:35 PM INFO: | Validation     18 | eval_acc  0.53808 |
+03/08 23:49:35 PM INFO: Current LR: 1.250000e-05
+03/08 23:49:35 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:35 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:49:35 PM INFO: Total validation passes without improvement:     18
+03/08 23:49:35 PM INFO: ======================================================================
+03/08 23:49:35 PM INFO: ======================================================================
+03/08 23:49:35 PM INFO: | Validation     19 | iter        0 | train_loss  0.11346 |
+03/08 23:49:35 PM INFO: | Validation     19 | iter      100 | train_loss  0.15700 |
+03/08 23:49:35 PM INFO: | Validation     19 | iter      200 | train_loss  0.13219 |
+03/08 23:49:35 PM INFO: | Validation     19 | iter      300 | train_loss  0.17195 |
+03/08 23:49:36 PM INFO: | Validation     19 | iter      400 | train_loss  0.12374 |
+03/08 23:49:36 PM INFO: | Validation     19 | iter      500 | train_loss  0.13893 |
+03/08 23:49:36 PM INFO: | Validation     19 | iter      600 | train_loss  0.09760 |
+03/08 23:49:36 PM INFO: | Validation     19 | iter      700 | train_loss  0.07918 |
+03/08 23:49:36 PM INFO: | Validation     19 | iter      800 | train_loss  0.15318 |
+03/08 23:49:37 PM INFO: | Validation     19 | iter      900 | train_loss  0.13295 |
+03/08 23:49:37 PM INFO: | Validation     19 | eval_acc  0.53754 |
+03/08 23:49:37 PM INFO: Current LR: 1.250000e-05
+03/08 23:49:37 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:37 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:49:37 PM INFO: Total validation passes without improvement:     19
+03/08 23:49:37 PM INFO: ======================================================================
+03/08 23:49:37 PM INFO: ======================================================================
+03/08 23:49:37 PM INFO: | Validation     20 | iter        0 | train_loss  0.10104 |
+03/08 23:49:37 PM INFO: | Validation     20 | iter      100 | train_loss  0.16319 |
+03/08 23:49:37 PM INFO: | Validation     20 | iter      200 | train_loss  0.14428 |
+03/08 23:49:37 PM INFO: | Validation     20 | iter      300 | train_loss  0.13281 |
+03/08 23:49:38 PM INFO: | Validation     20 | iter      400 | train_loss  0.11507 |
+03/08 23:49:38 PM INFO: | Validation     20 | iter      500 | train_loss  0.20712 |
+03/08 23:49:38 PM INFO: | Validation     20 | iter      600 | train_loss  0.13551 |
+03/08 23:49:38 PM INFO: | Validation     20 | iter      700 | train_loss  0.14463 |
+03/08 23:49:39 PM INFO: | Validation     20 | iter      800 | train_loss  0.14864 |
+03/08 23:49:39 PM INFO: | Validation     20 | iter      900 | train_loss  0.12108 |
+03/08 23:49:39 PM INFO: | Validation     20 | eval_acc  0.53863 |
+03/08 23:49:39 PM INFO: Current LR: 1.250000e-05
+03/08 23:49:39 PM INFO: Best accuracy  0.55930 at Step 0
+03/08 23:49:39 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:49:39 PM INFO: Total validation passes without improvement:     20
+03/08 23:49:39 PM INFO: ======================================================================
+03/08 23:49:39 PM INFO: Stopped training after 21 validation checks
+03/08 23:49:39 PM INFO: Trained for 21000 steps (batches) or 83.405734 epochs
+03/08 23:49:39 PM INFO: Best model found with accuracy  0.55930 at Validation 0
+03/08 23:49:39 PM INFO: Output predictions to ./outputs/piqa/probing_VideoBERT_topmask_text_mlp_R5_S1000_B32_LR0.0001
+03/08 23:49:39 PM INFO: ######################################################################
+03/08 23:49:39 PM INFO: ######################################################################
+03/08 23:49:39 PM INFO: ======================================================================
+03/08 23:49:39 PM INFO: | Validation      0 | iter        0 | train_loss  0.71583 |
+03/08 23:49:39 PM INFO: | Validation      0 | iter      100 | train_loss  0.66709 |
+03/08 23:49:40 PM INFO: | Validation      0 | iter      200 | train_loss  0.64377 |
+03/08 23:49:40 PM INFO: | Validation      0 | iter      300 | train_loss  0.69013 |
+03/08 23:49:40 PM INFO: | Validation      0 | iter      400 | train_loss  0.61949 |
+03/08 23:49:40 PM INFO: | Validation      0 | iter      500 | train_loss  0.69647 |
+03/08 23:49:40 PM INFO: | Validation      0 | iter      600 | train_loss  0.61736 |
+03/08 23:49:41 PM INFO: | Validation      0 | iter      700 | train_loss  0.61957 |
+03/08 23:49:41 PM INFO: | Validation      0 | iter      800 | train_loss  0.59832 |
+03/08 23:49:41 PM INFO: | Validation      0 | iter      900 | train_loss  0.70260 |
+03/08 23:49:41 PM INFO: | Validation      0 | eval_acc  0.55767 |
+03/08 23:49:41 PM INFO: **********************************************************************
+03/08 23:49:41 PM INFO: Best model found with accuracy  0.55767
+03/08 23:49:41 PM INFO: **********************************************************************
+03/08 23:49:41 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:41 PM INFO: Best accuracy  0.55767 at Step 0
+03/08 23:49:41 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:49:41 PM INFO: Total validation passes without improvement:      0
+03/08 23:49:41 PM INFO: ======================================================================
+03/08 23:49:41 PM INFO: ======================================================================
+03/08 23:49:41 PM INFO: | Validation      1 | iter        0 | train_loss  0.70454 |
+03/08 23:49:41 PM INFO: | Validation      1 | iter      100 | train_loss  0.68579 |
+03/08 23:49:42 PM INFO: | Validation      1 | iter      200 | train_loss  0.70709 |
+03/08 23:49:42 PM INFO: | Validation      1 | iter      300 | train_loss  0.62580 |
+03/08 23:49:42 PM INFO: | Validation      1 | iter      400 | train_loss  0.71236 |
+03/08 23:49:42 PM INFO: | Validation      1 | iter      500 | train_loss  0.65022 |
+03/08 23:49:42 PM INFO: | Validation      1 | iter      600 | train_loss  0.59565 |
+03/08 23:49:43 PM INFO: | Validation      1 | iter      700 | train_loss  0.59253 |
+03/08 23:49:43 PM INFO: | Validation      1 | iter      800 | train_loss  0.59873 |
+03/08 23:49:43 PM INFO: | Validation      1 | iter      900 | train_loss  0.56537 |
+03/08 23:49:43 PM INFO: | Validation      1 | eval_acc  0.58107 |
+03/08 23:49:43 PM INFO: **********************************************************************
+03/08 23:49:43 PM INFO: Best model found with accuracy  0.58107
+03/08 23:49:43 PM INFO: **********************************************************************
+03/08 23:49:43 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:43 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:43 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:49:43 PM INFO: Total validation passes without improvement:      0
+03/08 23:49:43 PM INFO: ======================================================================
+03/08 23:49:43 PM INFO: ======================================================================
+03/08 23:49:43 PM INFO: | Validation      2 | iter        0 | train_loss  0.66786 |
+03/08 23:49:44 PM INFO: | Validation      2 | iter      100 | train_loss  0.73233 |
+03/08 23:49:44 PM INFO: | Validation      2 | iter      200 | train_loss  0.59949 |
+03/08 23:49:44 PM INFO: | Validation      2 | iter      300 | train_loss  0.55570 |
+03/08 23:49:44 PM INFO: | Validation      2 | iter      400 | train_loss  0.75624 |
+03/08 23:49:44 PM INFO: | Validation      2 | iter      500 | train_loss  0.72332 |
+03/08 23:49:45 PM INFO: | Validation      2 | iter      600 | train_loss  0.63422 |
+03/08 23:49:45 PM INFO: | Validation      2 | iter      700 | train_loss  0.58313 |
+03/08 23:49:45 PM INFO: | Validation      2 | iter      800 | train_loss  0.54238 |
+03/08 23:49:45 PM INFO: | Validation      2 | iter      900 | train_loss  0.60979 |
+03/08 23:49:46 PM INFO: | Validation      2 | eval_acc  0.56801 |
+03/08 23:49:46 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:46 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:46 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:49:46 PM INFO: Total validation passes without improvement:      1
+03/08 23:49:46 PM INFO: ======================================================================
+03/08 23:49:46 PM INFO: ======================================================================
+03/08 23:49:46 PM INFO: | Validation      3 | iter        0 | train_loss  0.60205 |
+03/08 23:49:46 PM INFO: | Validation      3 | iter      100 | train_loss  0.60422 |
+03/08 23:49:46 PM INFO: | Validation      3 | iter      200 | train_loss  0.64476 |
+03/08 23:49:46 PM INFO: | Validation      3 | iter      300 | train_loss  0.57543 |
+03/08 23:49:46 PM INFO: | Validation      3 | iter      400 | train_loss  0.54989 |
+03/08 23:49:47 PM INFO: | Validation      3 | iter      500 | train_loss  0.67400 |
+03/08 23:49:47 PM INFO: | Validation      3 | iter      600 | train_loss  0.62379 |
+03/08 23:49:47 PM INFO: | Validation      3 | iter      700 | train_loss  0.57233 |
+03/08 23:49:47 PM INFO: | Validation      3 | iter      800 | train_loss  0.52867 |
+03/08 23:49:48 PM INFO: | Validation      3 | iter      900 | train_loss  0.60699 |
+03/08 23:49:48 PM INFO: | Validation      3 | eval_acc  0.55604 |
+03/08 23:49:48 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:48 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:48 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:49:48 PM INFO: Total validation passes without improvement:      2
+03/08 23:49:48 PM INFO: ======================================================================
+03/08 23:49:48 PM INFO: ======================================================================
+03/08 23:49:48 PM INFO: | Validation      4 | iter        0 | train_loss  0.52169 |
+03/08 23:49:48 PM INFO: | Validation      4 | iter      100 | train_loss  0.59530 |
+03/08 23:49:48 PM INFO: | Validation      4 | iter      200 | train_loss  0.61063 |
+03/08 23:49:48 PM INFO: | Validation      4 | iter      300 | train_loss  0.51694 |
+03/08 23:49:49 PM INFO: | Validation      4 | iter      400 | train_loss  0.55677 |
+03/08 23:49:49 PM INFO: | Validation      4 | iter      500 | train_loss  0.51263 |
+03/08 23:49:49 PM INFO: | Validation      4 | iter      600 | train_loss  0.51299 |
+03/08 23:49:49 PM INFO: | Validation      4 | iter      700 | train_loss  0.49200 |
+03/08 23:49:49 PM INFO: | Validation      4 | iter      800 | train_loss  0.53940 |
+03/08 23:49:50 PM INFO: | Validation      4 | iter      900 | train_loss  0.54385 |
+03/08 23:49:50 PM INFO: | Validation      4 | eval_acc  0.56311 |
+03/08 23:49:50 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:50 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:50 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:49:50 PM INFO: Total validation passes without improvement:      3
+03/08 23:49:50 PM INFO: ======================================================================
+03/08 23:49:50 PM INFO: ======================================================================
+03/08 23:49:50 PM INFO: | Validation      5 | iter        0 | train_loss  0.46592 |
+03/08 23:49:50 PM INFO: | Validation      5 | iter      100 | train_loss  0.52076 |
+03/08 23:49:50 PM INFO: | Validation      5 | iter      200 | train_loss  0.46942 |
+03/08 23:49:51 PM INFO: | Validation      5 | iter      300 | train_loss  0.53744 |
+03/08 23:49:51 PM INFO: | Validation      5 | iter      400 | train_loss  0.38468 |
+03/08 23:49:51 PM INFO: | Validation      5 | iter      500 | train_loss  0.67148 |
+03/08 23:49:51 PM INFO: | Validation      5 | iter      600 | train_loss  0.54739 |
+03/08 23:49:51 PM INFO: | Validation      5 | iter      700 | train_loss  0.46055 |
+03/08 23:49:52 PM INFO: | Validation      5 | iter      800 | train_loss  0.61407 |
+03/08 23:49:52 PM INFO: | Validation      5 | iter      900 | train_loss  0.58707 |
+03/08 23:49:52 PM INFO: | Validation      5 | eval_acc  0.55169 |
+03/08 23:49:52 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:52 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:52 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:49:52 PM INFO: Total validation passes without improvement:      4
+03/08 23:49:52 PM INFO: ======================================================================
+03/08 23:49:52 PM INFO: ======================================================================
+03/08 23:49:52 PM INFO: | Validation      6 | iter        0 | train_loss  0.60493 |
+03/08 23:49:52 PM INFO: | Validation      6 | iter      100 | train_loss  0.53635 |
+03/08 23:49:53 PM INFO: | Validation      6 | iter      200 | train_loss  0.51558 |
+03/08 23:49:53 PM INFO: | Validation      6 | iter      300 | train_loss  0.55416 |
+03/08 23:49:53 PM INFO: | Validation      6 | iter      400 | train_loss  0.47758 |
+03/08 23:49:53 PM INFO: | Validation      6 | iter      500 | train_loss  0.47223 |
+03/08 23:49:54 PM INFO: | Validation      6 | iter      600 | train_loss  0.48458 |
+03/08 23:49:54 PM INFO: | Validation      6 | iter      700 | train_loss  0.43015 |
+03/08 23:49:54 PM INFO: | Validation      6 | iter      800 | train_loss  0.45126 |
+03/08 23:49:54 PM INFO: | Validation      6 | iter      900 | train_loss  0.51003 |
+03/08 23:49:54 PM INFO: | Validation      6 | eval_acc  0.55386 |
+03/08 23:49:54 PM INFO: Current LR: 1.000000e-04
+03/08 23:49:54 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:54 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:49:54 PM INFO: Total validation passes without improvement:      5
+03/08 23:49:54 PM INFO: ======================================================================
+03/08 23:49:54 PM INFO: ======================================================================
+03/08 23:49:54 PM INFO: | Validation      7 | iter        0 | train_loss  0.46063 |
+03/08 23:49:55 PM INFO: | Validation      7 | iter      100 | train_loss  0.43948 |
+03/08 23:49:55 PM INFO: | Validation      7 | iter      200 | train_loss  0.63124 |
+03/08 23:49:55 PM INFO: | Validation      7 | iter      300 | train_loss  0.40753 |
+03/08 23:49:55 PM INFO: | Validation      7 | iter      400 | train_loss  0.49319 |
+03/08 23:49:56 PM INFO: | Validation      7 | iter      500 | train_loss  0.44831 |
+03/08 23:49:56 PM INFO: | Validation      7 | iter      600 | train_loss  0.42087 |
+03/08 23:49:56 PM INFO: | Validation      7 | iter      700 | train_loss  0.51608 |
+03/08 23:49:56 PM INFO: | Validation      7 | iter      800 | train_loss  0.31917 |
+03/08 23:49:56 PM INFO: | Validation      7 | iter      900 | train_loss  0.39690 |
+03/08 23:49:57 PM INFO: | Validation      7 | eval_acc  0.54625 |
+03/08 23:49:57 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:57 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:57 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:49:57 PM INFO: Total validation passes without improvement:      6
+03/08 23:49:57 PM INFO: ======================================================================
+03/08 23:49:57 PM INFO: ======================================================================
+03/08 23:49:57 PM INFO: | Validation      8 | iter        0 | train_loss  0.41428 |
+03/08 23:49:57 PM INFO: | Validation      8 | iter      100 | train_loss  0.35509 |
+03/08 23:49:57 PM INFO: | Validation      8 | iter      200 | train_loss  0.33084 |
+03/08 23:49:57 PM INFO: | Validation      8 | iter      300 | train_loss  0.37206 |
+03/08 23:49:58 PM INFO: | Validation      8 | iter      400 | train_loss  0.35435 |
+03/08 23:49:58 PM INFO: | Validation      8 | iter      500 | train_loss  0.35429 |
+03/08 23:49:58 PM INFO: | Validation      8 | iter      600 | train_loss  0.41007 |
+03/08 23:49:58 PM INFO: | Validation      8 | iter      700 | train_loss  0.36978 |
+03/08 23:49:58 PM INFO: | Validation      8 | iter      800 | train_loss  0.39305 |
+03/08 23:49:59 PM INFO: | Validation      8 | iter      900 | train_loss  0.32129 |
+03/08 23:49:59 PM INFO: | Validation      8 | eval_acc  0.54298 |
+03/08 23:49:59 PM INFO: Current LR: 5.000000e-05
+03/08 23:49:59 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:49:59 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:49:59 PM INFO: Total validation passes without improvement:      7
+03/08 23:49:59 PM INFO: ======================================================================
+03/08 23:49:59 PM INFO: ======================================================================
+03/08 23:49:59 PM INFO: | Validation      9 | iter        0 | train_loss  0.34710 |
+03/08 23:49:59 PM INFO: | Validation      9 | iter      100 | train_loss  0.31339 |
+03/08 23:49:59 PM INFO: | Validation      9 | iter      200 | train_loss  0.29444 |
+03/08 23:49:59 PM INFO: | Validation      9 | iter      300 | train_loss  0.30838 |
+03/08 23:50:00 PM INFO: | Validation      9 | iter      400 | train_loss  0.38510 |
+03/08 23:50:00 PM INFO: | Validation      9 | iter      500 | train_loss  0.41765 |
+03/08 23:50:00 PM INFO: | Validation      9 | iter      600 | train_loss  0.45375 |
+03/08 23:50:00 PM INFO: | Validation      9 | iter      700 | train_loss  0.39976 |
+03/08 23:50:00 PM INFO: | Validation      9 | iter      800 | train_loss  0.29619 |
+03/08 23:50:01 PM INFO: | Validation      9 | iter      900 | train_loss  0.36002 |
+03/08 23:50:01 PM INFO: | Validation      9 | eval_acc  0.54081 |
+03/08 23:50:01 PM INFO: Current LR: 5.000000e-05
+03/08 23:50:01 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:01 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:50:01 PM INFO: Total validation passes without improvement:      8
+03/08 23:50:01 PM INFO: ======================================================================
+03/08 23:50:01 PM INFO: ======================================================================
+03/08 23:50:01 PM INFO: | Validation     10 | iter        0 | train_loss  0.39502 |
+03/08 23:50:01 PM INFO: | Validation     10 | iter      100 | train_loss  0.25448 |
+03/08 23:50:01 PM INFO: | Validation     10 | iter      200 | train_loss  0.25151 |
+03/08 23:50:02 PM INFO: | Validation     10 | iter      300 | train_loss  0.28284 |
+03/08 23:50:02 PM INFO: | Validation     10 | iter      400 | train_loss  0.27972 |
+03/08 23:50:02 PM INFO: | Validation     10 | iter      500 | train_loss  0.39032 |
+03/08 23:50:02 PM INFO: | Validation     10 | iter      600 | train_loss  0.27242 |
+03/08 23:50:02 PM INFO: | Validation     10 | iter      700 | train_loss  0.31627 |
+03/08 23:50:03 PM INFO: | Validation     10 | iter      800 | train_loss  0.27512 |
+03/08 23:50:03 PM INFO: | Validation     10 | iter      900 | train_loss  0.40528 |
+03/08 23:50:03 PM INFO: | Validation     10 | eval_acc  0.53863 |
+03/08 23:50:03 PM INFO: Current LR: 5.000000e-05
+03/08 23:50:03 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:03 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:50:03 PM INFO: Total validation passes without improvement:      9
+03/08 23:50:03 PM INFO: ======================================================================
+03/08 23:50:03 PM INFO: ======================================================================
+03/08 23:50:03 PM INFO: | Validation     11 | iter        0 | train_loss  0.27079 |
+03/08 23:50:03 PM INFO: | Validation     11 | iter      100 | train_loss  0.32987 |
+03/08 23:50:03 PM INFO: | Validation     11 | iter      200 | train_loss  0.40315 |
+03/08 23:50:04 PM INFO: | Validation     11 | iter      300 | train_loss  0.27355 |
+03/08 23:50:04 PM INFO: | Validation     11 | iter      400 | train_loss  0.33268 |
+03/08 23:50:04 PM INFO: | Validation     11 | iter      500 | train_loss  0.26647 |
+03/08 23:50:04 PM INFO: | Validation     11 | iter      600 | train_loss  0.36420 |
+03/08 23:50:05 PM INFO: | Validation     11 | iter      700 | train_loss  0.37857 |
+03/08 23:50:05 PM INFO: | Validation     11 | iter      800 | train_loss  0.33100 |
+03/08 23:50:05 PM INFO: | Validation     11 | iter      900 | train_loss  0.34590 |
+03/08 23:50:05 PM INFO: | Validation     11 | eval_acc  0.53917 |
+03/08 23:50:05 PM INFO: Current LR: 5.000000e-05
+03/08 23:50:05 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:05 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:50:05 PM INFO: Total validation passes without improvement:     10
+03/08 23:50:05 PM INFO: ======================================================================
+03/08 23:50:05 PM INFO: ======================================================================
+03/08 23:50:05 PM INFO: | Validation     12 | iter        0 | train_loss  0.40318 |
+03/08 23:50:05 PM INFO: | Validation     12 | iter      100 | train_loss  0.29503 |
+03/08 23:50:06 PM INFO: | Validation     12 | iter      200 | train_loss  0.17261 |
+03/08 23:50:06 PM INFO: | Validation     12 | iter      300 | train_loss  0.25444 |
+03/08 23:50:06 PM INFO: | Validation     12 | iter      400 | train_loss  0.27766 |
+03/08 23:50:06 PM INFO: | Validation     12 | iter      500 | train_loss  0.25757 |
+03/08 23:50:07 PM INFO: | Validation     12 | iter      600 | train_loss  0.29210 |
+03/08 23:50:07 PM INFO: | Validation     12 | iter      700 | train_loss  0.17502 |
+03/08 23:50:07 PM INFO: | Validation     12 | iter      800 | train_loss  0.27096 |
+03/08 23:50:07 PM INFO: | Validation     12 | iter      900 | train_loss  0.27025 |
+03/08 23:50:07 PM INFO: | Validation     12 | eval_acc  0.54625 |
+03/08 23:50:07 PM INFO: Current LR: 5.000000e-05
+03/08 23:50:07 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:07 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:50:07 PM INFO: Total validation passes without improvement:     11
+03/08 23:50:07 PM INFO: ======================================================================
+03/08 23:50:07 PM INFO: ======================================================================
+03/08 23:50:07 PM INFO: | Validation     13 | iter        0 | train_loss  0.24181 |
+03/08 23:50:08 PM INFO: | Validation     13 | iter      100 | train_loss  0.23553 |
+03/08 23:50:08 PM INFO: | Validation     13 | iter      200 | train_loss  0.21132 |
+03/08 23:50:08 PM INFO: | Validation     13 | iter      300 | train_loss  0.29439 |
+03/08 23:50:08 PM INFO: | Validation     13 | iter      400 | train_loss  0.29551 |
+03/08 23:50:08 PM INFO: | Validation     13 | iter      500 | train_loss  0.21791 |
+03/08 23:50:09 PM INFO: | Validation     13 | iter      600 | train_loss  0.32689 |
+03/08 23:50:09 PM INFO: | Validation     13 | iter      700 | train_loss  0.31003 |
+03/08 23:50:09 PM INFO: | Validation     13 | iter      800 | train_loss  0.21716 |
+03/08 23:50:09 PM INFO: | Validation     13 | iter      900 | train_loss  0.18478 |
+03/08 23:50:10 PM INFO: | Validation     13 | eval_acc  0.53754 |
+03/08 23:50:10 PM INFO: Current LR: 2.500000e-05
+03/08 23:50:10 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:10 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:50:10 PM INFO: Total validation passes without improvement:     12
+03/08 23:50:10 PM INFO: ======================================================================
+03/08 23:50:10 PM INFO: ======================================================================
+03/08 23:50:10 PM INFO: | Validation     14 | iter        0 | train_loss  0.21423 |
+03/08 23:50:10 PM INFO: | Validation     14 | iter      100 | train_loss  0.21682 |
+03/08 23:50:10 PM INFO: | Validation     14 | iter      200 | train_loss  0.25109 |
+03/08 23:50:10 PM INFO: | Validation     14 | iter      300 | train_loss  0.28361 |
+03/08 23:50:10 PM INFO: | Validation     14 | iter      400 | train_loss  0.22159 |
+03/08 23:50:11 PM INFO: | Validation     14 | iter      500 | train_loss  0.24584 |
+03/08 23:50:11 PM INFO: | Validation     14 | iter      600 | train_loss  0.20828 |
+03/08 23:50:11 PM INFO: | Validation     14 | iter      700 | train_loss  0.16528 |
+03/08 23:50:11 PM INFO: | Validation     14 | iter      800 | train_loss  0.22841 |
+03/08 23:50:11 PM INFO: | Validation     14 | iter      900 | train_loss  0.16059 |
+03/08 23:50:12 PM INFO: | Validation     14 | eval_acc  0.53917 |
+03/08 23:50:12 PM INFO: Current LR: 2.500000e-05
+03/08 23:50:12 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:12 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:50:12 PM INFO: Total validation passes without improvement:     13
+03/08 23:50:12 PM INFO: ======================================================================
+03/08 23:50:12 PM INFO: ======================================================================
+03/08 23:50:12 PM INFO: | Validation     15 | iter        0 | train_loss  0.20420 |
+03/08 23:50:12 PM INFO: | Validation     15 | iter      100 | train_loss  0.16165 |
+03/08 23:50:12 PM INFO: | Validation     15 | iter      200 | train_loss  0.20585 |
+03/08 23:50:12 PM INFO: | Validation     15 | iter      300 | train_loss  0.17191 |
+03/08 23:50:13 PM INFO: | Validation     15 | iter      400 | train_loss  0.19811 |
+03/08 23:50:13 PM INFO: | Validation     15 | iter      500 | train_loss  0.19916 |
+03/08 23:50:13 PM INFO: | Validation     15 | iter      600 | train_loss  0.30913 |
+03/08 23:50:13 PM INFO: | Validation     15 | iter      700 | train_loss  0.25773 |
+03/08 23:50:13 PM INFO: | Validation     15 | iter      800 | train_loss  0.13794 |
+03/08 23:50:14 PM INFO: | Validation     15 | iter      900 | train_loss  0.25756 |
+03/08 23:50:14 PM INFO: | Validation     15 | eval_acc  0.53700 |
+03/08 23:50:14 PM INFO: Current LR: 2.500000e-05
+03/08 23:50:14 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:14 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:50:14 PM INFO: Total validation passes without improvement:     14
+03/08 23:50:14 PM INFO: ======================================================================
+03/08 23:50:14 PM INFO: ======================================================================
+03/08 23:50:14 PM INFO: | Validation     16 | iter        0 | train_loss  0.21294 |
+03/08 23:50:14 PM INFO: | Validation     16 | iter      100 | train_loss  0.16914 |
+03/08 23:50:14 PM INFO: | Validation     16 | iter      200 | train_loss  0.15957 |
+03/08 23:50:15 PM INFO: | Validation     16 | iter      300 | train_loss  0.32784 |
+03/08 23:50:15 PM INFO: | Validation     16 | iter      400 | train_loss  0.27116 |
+03/08 23:50:15 PM INFO: | Validation     16 | iter      500 | train_loss  0.23580 |
+03/08 23:50:15 PM INFO: | Validation     16 | iter      600 | train_loss  0.20772 |
+03/08 23:50:15 PM INFO: | Validation     16 | iter      700 | train_loss  0.17262 |
+03/08 23:50:16 PM INFO: | Validation     16 | iter      800 | train_loss  0.27080 |
+03/08 23:50:16 PM INFO: | Validation     16 | iter      900 | train_loss  0.17411 |
+03/08 23:50:16 PM INFO: | Validation     16 | eval_acc  0.54625 |
+03/08 23:50:16 PM INFO: Current LR: 2.500000e-05
+03/08 23:50:16 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:16 PM INFO: Validation passes without improvement for this LR:      3
+03/08 23:50:16 PM INFO: Total validation passes without improvement:     15
+03/08 23:50:16 PM INFO: ======================================================================
+03/08 23:50:16 PM INFO: ======================================================================
+03/08 23:50:16 PM INFO: | Validation     17 | iter        0 | train_loss  0.26697 |
+03/08 23:50:16 PM INFO: | Validation     17 | iter      100 | train_loss  0.16363 |
+03/08 23:50:16 PM INFO: | Validation     17 | iter      200 | train_loss  0.16139 |
+03/08 23:50:17 PM INFO: | Validation     17 | iter      300 | train_loss  0.22552 |
+03/08 23:50:17 PM INFO: | Validation     17 | iter      400 | train_loss  0.14513 |
+03/08 23:50:17 PM INFO: | Validation     17 | iter      500 | train_loss  0.22295 |
+03/08 23:50:17 PM INFO: | Validation     17 | iter      600 | train_loss  0.14893 |
+03/08 23:50:17 PM INFO: | Validation     17 | iter      700 | train_loss  0.16706 |
+03/08 23:50:18 PM INFO: | Validation     17 | iter      800 | train_loss  0.22950 |
+03/08 23:50:18 PM INFO: | Validation     17 | iter      900 | train_loss  0.20342 |
+03/08 23:50:18 PM INFO: | Validation     17 | eval_acc  0.53917 |
+03/08 23:50:18 PM INFO: Current LR: 2.500000e-05
+03/08 23:50:18 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:18 PM INFO: Validation passes without improvement for this LR:      4
+03/08 23:50:18 PM INFO: Total validation passes without improvement:     16
+03/08 23:50:18 PM INFO: ======================================================================
+03/08 23:50:18 PM INFO: ======================================================================
+03/08 23:50:18 PM INFO: | Validation     18 | iter        0 | train_loss  0.24137 |
+03/08 23:50:18 PM INFO: | Validation     18 | iter      100 | train_loss  0.18983 |
+03/08 23:50:19 PM INFO: | Validation     18 | iter      200 | train_loss  0.22049 |
+03/08 23:50:19 PM INFO: | Validation     18 | iter      300 | train_loss  0.14647 |
+03/08 23:50:19 PM INFO: | Validation     18 | iter      400 | train_loss  0.13259 |
+03/08 23:50:19 PM INFO: | Validation     18 | iter      500 | train_loss  0.16444 |
+03/08 23:50:19 PM INFO: | Validation     18 | iter      600 | train_loss  0.13559 |
+03/08 23:50:20 PM INFO: | Validation     18 | iter      700 | train_loss  0.15799 |
+03/08 23:50:20 PM INFO: | Validation     18 | iter      800 | train_loss  0.14767 |
+03/08 23:50:20 PM INFO: | Validation     18 | iter      900 | train_loss  0.16448 |
+03/08 23:50:20 PM INFO: | Validation     18 | eval_acc  0.54298 |
+03/08 23:50:20 PM INFO: Current LR: 2.500000e-05
+03/08 23:50:20 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:20 PM INFO: Validation passes without improvement for this LR:      5
+03/08 23:50:20 PM INFO: Total validation passes without improvement:     17
+03/08 23:50:20 PM INFO: ======================================================================
+03/08 23:50:20 PM INFO: ======================================================================
+03/08 23:50:20 PM INFO: | Validation     19 | iter        0 | train_loss  0.20918 |
+03/08 23:50:21 PM INFO: | Validation     19 | iter      100 | train_loss  0.16965 |
+03/08 23:50:21 PM INFO: | Validation     19 | iter      200 | train_loss  0.18624 |
+03/08 23:50:21 PM INFO: | Validation     19 | iter      300 | train_loss  0.14664 |
+03/08 23:50:21 PM INFO: | Validation     19 | iter      400 | train_loss  0.10429 |
+03/08 23:50:21 PM INFO: | Validation     19 | iter      500 | train_loss  0.19112 |
+03/08 23:50:22 PM INFO: | Validation     19 | iter      600 | train_loss  0.16269 |
+03/08 23:50:22 PM INFO: | Validation     19 | iter      700 | train_loss  0.14982 |
+03/08 23:50:22 PM INFO: | Validation     19 | iter      800 | train_loss  0.21256 |
+03/08 23:50:22 PM INFO: | Validation     19 | iter      900 | train_loss  0.14495 |
+03/08 23:50:22 PM INFO: | Validation     19 | eval_acc  0.53591 |
+03/08 23:50:22 PM INFO: Current LR: 1.250000e-05
+03/08 23:50:22 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:22 PM INFO: Validation passes without improvement for this LR:      0
+03/08 23:50:22 PM INFO: Total validation passes without improvement:     18
+03/08 23:50:22 PM INFO: ======================================================================
+03/08 23:50:22 PM INFO: ======================================================================
+03/08 23:50:22 PM INFO: | Validation     20 | iter        0 | train_loss  0.17546 |
+03/08 23:50:23 PM INFO: | Validation     20 | iter      100 | train_loss  0.21182 |
+03/08 23:50:23 PM INFO: | Validation     20 | iter      200 | train_loss  0.13993 |
+03/08 23:50:23 PM INFO: | Validation     20 | iter      300 | train_loss  0.20049 |
+03/08 23:50:23 PM INFO: | Validation     20 | iter      400 | train_loss  0.12131 |
+03/08 23:50:23 PM INFO: | Validation     20 | iter      500 | train_loss  0.20724 |
+03/08 23:50:24 PM INFO: | Validation     20 | iter      600 | train_loss  0.15588 |
+03/08 23:50:24 PM INFO: | Validation     20 | iter      700 | train_loss  0.19934 |
+03/08 23:50:24 PM INFO: | Validation     20 | iter      800 | train_loss  0.15819 |
+03/08 23:50:24 PM INFO: | Validation     20 | iter      900 | train_loss  0.12365 |
+03/08 23:50:24 PM INFO: | Validation     20 | eval_acc  0.53536 |
+03/08 23:50:24 PM INFO: Current LR: 1.250000e-05
+03/08 23:50:24 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:24 PM INFO: Validation passes without improvement for this LR:      1
+03/08 23:50:24 PM INFO: Total validation passes without improvement:     19
+03/08 23:50:24 PM INFO: ======================================================================
+03/08 23:50:24 PM INFO: ======================================================================
+03/08 23:50:24 PM INFO: | Validation     21 | iter        0 | train_loss  0.16234 |
+03/08 23:50:25 PM INFO: | Validation     21 | iter      100 | train_loss  0.14247 |
+03/08 23:50:25 PM INFO: | Validation     21 | iter      200 | train_loss  0.18420 |
+03/08 23:50:25 PM INFO: | Validation     21 | iter      300 | train_loss  0.13424 |
+03/08 23:50:25 PM INFO: | Validation     21 | iter      400 | train_loss  0.22095 |
+03/08 23:50:26 PM INFO: | Validation     21 | iter      500 | train_loss  0.14460 |
+03/08 23:50:26 PM INFO: | Validation     21 | iter      600 | train_loss  0.11720 |
+03/08 23:50:26 PM INFO: | Validation     21 | iter      700 | train_loss  0.17165 |
+03/08 23:50:26 PM INFO: | Validation     21 | iter      800 | train_loss  0.20994 |
+03/08 23:50:26 PM INFO: | Validation     21 | iter      900 | train_loss  0.19266 |
+03/08 23:50:27 PM INFO: | Validation     21 | eval_acc  0.53264 |
+03/08 23:50:27 PM INFO: Current LR: 1.250000e-05
+03/08 23:50:27 PM INFO: Best accuracy  0.58107 at Step 1
+03/08 23:50:27 PM INFO: Validation passes without improvement for this LR:      2
+03/08 23:50:27 PM INFO: Total validation passes without improvement:     20
+03/08 23:50:27 PM INFO: ======================================================================
+03/08 23:50:27 PM INFO: Stopped training after 22 validation checks
+03/08 23:50:27 PM INFO: Trained for 22000 steps (batches) or 87.377436 epochs
+03/08 23:50:27 PM INFO: Best model found with accuracy  0.58107 at Validation 1
+03/08 23:50:27 PM INFO: Output predictions to ./outputs/piqa/probing_VideoBERT_topmask_text_mlp_R5_S1000_B32_LR0.0001
+03/08 23:50:27 PM INFO: ######################################################################
+03/08 23:50:27 PM INFO: ######################################################################
+03/08 23:50:27 PM INFO:    5 runs accuracy list: [['0.574', '0.5734', '0.5696', '0.5593', '0.5811']]
+03/08 23:50:27 PM INFO: Mean accuracy:   0.5715
+03/08 23:50:27 PM INFO: Standard deviation accuracy:   0.0071
+03/08 23:50:27 PM INFO: Done!
