@@ -58,6 +58,10 @@
   # - VisualBERT_vt
   bash scripts/piqa/precompute_sentence_embedding.sh -e [embedder]
   ```
+  We have also provided a script to precompute the sentence embeddings for all 7 provided embedder at once.
+  ```shell script
+  bash scripts/piqa/run_all_precompute_embeddings.sh
+  ```
 
 ### 1.3. Probing Experiments
   We measure the quality of the representations with 3 different probing heads: **Linear probe**, **MLP probe**, and a **Transformer probe**. **Transformer probe** is to finetune the last transformer encoder layer and a linear layer on top of it. 
@@ -71,6 +75,10 @@
   ```
   The default arguments of both commands will run the experiments for 5 times and log the averaged performance metric. You can modify the `num_runs` in the scripts to control the number of runs. The logs will be written to `logs/piqa/`, while the outputs (i.e. predictions on validation set of PIQA) will be written to `outputs/piqa/`.
 
+  We have also provided a script to run all the probing experiments for all 7 provided embedder at once.
+  ```shell script
+  bash scripts/piqa/run_all_probing_experiments.sh
+  ```
 
 ## 2. Adjective Noun Composition
   This section corresponds to Section 4.3 of the [paper](https://arxiv.org/pdf/2109.10246.pdf). We explore whether multimodal pretraining impacts conceptual structure at the lexical level. To look into this, we focus on adjective-noun composition which provides a simple way of defining a space of visually groundable objects and properties that we expect conceptual representations to encode.
